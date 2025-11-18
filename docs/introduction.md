@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-The Tesseract facilitator is a facilitator according to the [z402](../docs/z402/introduction.md) protocol, let's understand what it can do for you and how it works.
+The **Tesseract facilitator** is a facilitator according to the [z402](../docs/z402/introduction.md) protocol hosted by Tesseract focused on stability and privacy. Let's understand what it can do for you and how it works.
 
 ## Why z402 and not x402
 
@@ -14,16 +14,20 @@ x402 is _An open protocol for internet-native payments_, while z402 can be descr
 z402 doesn't aim to replace x402, but rather to improve it and extend its functionalities. We're working we the x402 team to bring you one feature rich protocol, stay tuned! In the meantime, you can enjoy z402's cutting edge features with Tesseract.
 :::
 
-You can discover the technical details about z402 in the [dedicated docs](../docs/z402/introduction.md).
+You can discover the why z402 is awesome and its technical details in the [dedicated docs](../docs/z402/introduction.md).
 
 ## Why the facilitator
 
-A facilitator is software, self-hosted or running in the cloud, used in z402 and x402 to abstract complexity from the users: buyer and seller; it allows to more quickly develop applications using z402. Tesseract offers a cloud hosted facilitator: the **Tesseract facilitator**.
+The z402 is a payment protocol that connects two users: the buyer and the seller. In order to follow the protocol the users must use a **z402 client**.
 
-A facilitator is optional because one could implement the protocol from scratch, even tho it's not recommended. Here is an overview of the available implementation options.
+A facilitator is not a client but a software that handles much of the blockchain and protocol specific complexity, so that clients are easier and faster to develop.
 
-| Implementation                | Degree of control | Price                    | Maintenance cost                        |
+It's possible to build a full client using a facilitator and a client SDK, or building it from scratch handling the entire protocol. Moreover a facilitator can be self-hosted or cloud-hosted, the **Tesseract facilitator** is a cloud-hosted facilitator managed by Tesseract with care to reliability and privacy. Since our code is completely open source, you can host it yourself if you wish.
+
+Here is an overview of the available implementation options for developing a z402 client.
+
+| Client Implementation         | Degree of control | Price                    | Maintenance cost                        |
 | ----------------------------- | ----------------- | ------------------------ | --------------------------------------- |
 | From scratch                  | Full control      | Free                     | Highest (you own all updates and fixes) |
-| Facilitator self-hosted       | High control      | Free                     | Medium (server upkeep, monitoring)      |
-| Tesseract facilitator (cloud) | Medium control    | < 0.01\$ per transaction | Lowest (provider handles operations)    |
+| Self-hosted facilitator + SDK | Higher control    | Free                     | Medium (server upkeep, monitoring)      |
+| Tesseract facilitator + SDK   | High control      | < 0.01\$ per transaction | Lowest (Tesseract handles operations)   |

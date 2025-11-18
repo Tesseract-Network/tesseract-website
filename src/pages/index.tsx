@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 import Navbar from "@site/src/components/Navbar";
 import LandingHero from "@site/src/components/LandingHero";
 import WhySection from "@site/src/components/WhySection";

@@ -1,0 +1,1 @@
+- Authorization phase: The buyer deposits an amount into the smart contract and sets the seller as beneficiary, the smart contract will allow the seller to withdraw a part of the amount every time they execute a task for the buyer.

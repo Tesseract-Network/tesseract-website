@@ -58,3 +58,5 @@ Sections:
 - Remove the pepsi logo and use your own
 - You have a navbar in the lending page and one in the docs, they don't match... Same for the footer
 - There are some evident color problems in the docs, I guess it's because of the custom css file that I edited
+- Consider migrating the docs to <https://www.mintlify.com/>, it has an integrated mcp server, that's a killer feature
+- Be sure in implementation of the smart contract to make the seller pay for the fees, not the buyer
