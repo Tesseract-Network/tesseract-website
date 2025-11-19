@@ -8,7 +8,8 @@ The **Tesseract facilitator** is a facilitator according to the [z402](../docs/z
 
 ## Why z402 and not x402
 
-x402 is _An open protocol for internet-native payments_, while z402 can be described as _x402 but with **zero** blockchain network delay_, it allows for truly instantaneous transactions and it's more secure and decentralized because it runs on audited smart contracts.
+x402 is a protocol that enables payments in HTTP requests, the protocol relies on the blockchain and inherits its speed, while z402 works similarly to x402 but with **zero** blockchain-induced delay, it allows for truly instantaneous transactions and it's more secure and decentralized because it runs on audited smart contracts.
+z402 is an extension of x402, meaning it has all its features and you can use z402 software and don't experience problems while using the x402 ecosystem.
 
 :::note
 z402 doesn't aim to replace x402, but rather to improve it and extend its functionalities. We're working we the x402 team to bring you one feature rich protocol, stay tuned! In the meantime, you can enjoy z402's cutting edge features with Tesseract.

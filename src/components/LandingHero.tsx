@@ -34,7 +34,7 @@ export default function LandingHero() {
 
       <div className="hero-overlay">
         <p className="hero-title">The <span key={word} className="accent word-anim">{word}</span> x402<br></br>facilitator</p>
-        <p className="hero-sub">Unlock AI agents transactions with <span className="fancy-underline">0 seconds</span> delay on Solana, XRP, TON and more</p>
+        <p className="hero-sub">Unlock AI agents transactions with <span className="fancy-underline">0 seconds</span> delay on Ethereum, Solana, XRP, TON and more</p>
       </div>
     </section>
   )

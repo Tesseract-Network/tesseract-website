@@ -8,6 +8,10 @@ import TrustedBy from "@site/src/components/TrustedBy";
 import OpenSourceCTA from "@site/src/components/OpenSourceCTA";
 import Footer from "@site/src/components/Footer";
 
+import React from 'react';
+// import Navbar from '@theme/Navbar';
+// import Layout from '@theme/Layout';
+
 function App() {
   return (
     <>

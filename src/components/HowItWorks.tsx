@@ -81,10 +81,10 @@ export default function HowItWorks() {
           Want to know more? Check out our Docs and Whitepaper.
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href="#docs" className="btn btn-outline">
+          <a href="/docs" className="btn btn-outline">
             Read the Docs
           </a>
-          <a href="#whitepaper" className="btn btn-outline">
+          <a href="/whitepaper" className="btn btn-outline">
             Read the Whitepaper
           </a>
         </div>

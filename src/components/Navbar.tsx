@@ -1,4 +1,4 @@
-export default function Navbar(){
+export default function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-inner">
@@ -9,13 +9,13 @@ export default function Navbar(){
         </div>
 
         <nav className="nav-center">
-          <a href="#home">Home</a>
-          <a href="#docs">Docs</a>
-          <a href="#about">About</a>
+          <a href="/">Home</a>
+          <a href="/docs">Docs</a>
+          {/* <a href="/about">About</a> */}
         </nav>
 
         <div className="nav-right">
-          <a href="#get-started" className="btn btn-primary">Get started</a>
+          <a href="/docs/tesseract-facilitator/introduction" className="btn btn-primary">Get started</a>
         </div>
       </div>
     </header>
