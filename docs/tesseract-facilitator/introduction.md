@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Facilitator Introduction
 
-The **Tesseract facilitator** is a facilitator according to the [z402](../docs/z402/introduction.md) protocol hosted by Tesseract focused on cutting-edge features and privacy. Let's understand what it can do for you and how it works.
+The **Tesseract facilitator** is a facilitator according to the [z402](/docs/z402/introduction.md) protocol hosted by Tesseract focused on cutting-edge features and privacy. Let's understand what it can do for you and how it works.
 
 ## Why z402 and not x402
 
@@ -15,7 +15,7 @@ z402 is an extension of x402, meaning it has all its features and you can use z4
 z402 doesn't aim to replace x402, but rather to improve it and extend its functionalities. We're working we the x402 team to bring you one feature rich protocol, stay tuned! In the meantime, you can enjoy z402's cutting edge features with Tesseract.
 :::
 
-You can discover the why z402 is awesome and its technical details in the [dedicated docs](../docs/z402/introduction.md).
+You can discover the why z402 is awesome and its technical details in the [dedicated docs](/docs/z402/introduction.md).
 
 ## Why the facilitator
 
