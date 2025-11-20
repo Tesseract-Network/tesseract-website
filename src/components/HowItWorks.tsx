@@ -77,19 +77,26 @@ export default function HowItWorks() {
       </div>
 
       <div className="how-cta">
-        <p className="how-cta-text">
-          Want to know more? Check out our Docs and Whitepaper.
-        </p>
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+        {/* <p className="how-cta-text"> */}
+        {/*   Want to know more? Check out our Docs and Whitepaper. */}
+        {/* </p> */}
+        <p className="how-cta-text">Want to know more?</p>
+        <div
+          style={{
+            display: "flex",
+            gap: "1rem",
+            justifyContent: "center",
+            flexWrap: "wrap",
+          }}
+        >
           <a href="/docs" className="btn btn-outline">
             Read the Docs
           </a>
-          <a href="/whitepaper" className="btn btn-outline">
-            Read the Whitepaper
-          </a>
+          {/* <a href="/whitepaper" className="btn btn-outline"> */}
+          {/*   Read the Whitepaper */}
+          {/* </a> */}
         </div>
       </div>
     </section>
   );
 }
-

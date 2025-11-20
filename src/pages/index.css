@@ -349,10 +349,10 @@ footer.site-footer {
 }
 
 /* keep dark background */
-body {
-  background: var(--bg);
-  color: #eef3f8;
-}
+/* body { */
+/*   background: var(--bg); */
+/*   color: #eef3f8; */
+/* } */
 
 /* ensure full-bleed layout for navbar and hero */
 html,
