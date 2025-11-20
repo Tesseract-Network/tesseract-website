@@ -70,7 +70,9 @@ const config: Config = {
     // Replace with your project's social card
     image: "logo.png",
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: "dark",
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: "Tesseract",
