@@ -1,3 +1,21 @@
+/* global variables */
+:root {
+  --bg: #0f1720;
+  --card: #0b1220;
+  --muted: #9aa4b2;
+  --accent: #7c5cff;
+  --accent-2: #61dafb;
+  --glass: rgba(255, 255, 255, 0.04);
+}
+
+/* Full viewport */
+/* html, */
+/* body, */
+/* #root { */
+/*   height: 100%; */
+/*   width: 100%; */
+/* } */
+
 /* Original white theme */
 :root {
   --ifm-color-primary: #2e8555;

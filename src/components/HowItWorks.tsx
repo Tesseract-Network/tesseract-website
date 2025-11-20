@@ -1,31 +1,32 @@
+import styles from "@site/src/css/landing.module.css";
+
 export default function HowItWorks() {
   return (
-    <section className="how-section" id="how-it-works">
-      <div className="section-header">
-        <h2 className="section-title">How It Works</h2>
-        <p className="section-subtitle">
+    <section className={styles.howSection} id="how-it-works">
+      <div className={styles.sectionHeader}>
+        <h2 className={styles.sectionTitle}>How It Works</h2>
+        <p className={styles.sectionSubtitle}>
           Instant payments powered by z402, the x402 extension with 0 delay
         </p>
       </div>
 
-      <div className="how-steps">
-        <div className="how-step">
-          <div className="step-number">01</div>
-          <div className="step-content">
+      <div className={styles.howSteps}>
+        <div className={styles.howStep}>
+          <div className={styles.stepNumber}>01</div>
+          <div className={styles.stepContent}>
             <h3>Payment Pre-authorization</h3>
             <p>
-              The buyer AI agent enables instant payments to a merchant up to an
-              amount using our SDK, under the hood it's using our smart
-              contract.
+              The buyer AI agent enables instant payments to a merchant using
+              our SDK, under the hood it's using our smart contract.
             </p>
           </div>
         </div>
 
-        <div className="step-connector"></div>
+        <div className={styles.stepConnector}></div>
 
-        <div className="how-step">
-          <div className="step-number">02</div>
-          <div className="step-content">
+        <div className={styles.howStep}>
+          <div className={styles.stepNumber}>02</div>
+          <div className={styles.stepContent}>
             <h3>Initialize Payment</h3>
             <p>
               The buyer agent asks a merchant for a service and initiates a
@@ -34,11 +35,11 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        <div className="step-connector"></div>
+        <div className={styles.stepConnector}></div>
 
-        <div className="how-step">
-          <div className="step-number">03</div>
-          <div className="step-content">
+        <div className={styles.howStep}>
+          <div className={styles.stepNumber}>03</div>
+          <div className={styles.stepContent}>
             <h3>Instant Verification</h3>
             <p>
               The merchant verifies the payment is valid completely off-chain,
@@ -48,11 +49,11 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        <div className="step-connector"></div>
+        <div className={styles.stepConnector}></div>
 
-        <div className="how-step">
-          <div className="step-number">04</div>
-          <div className="step-content">
+        <div className={styles.howStep}>
+          <div className={styles.stepNumber}>04</div>
+          <div className={styles.stepContent}>
             <h3>Parallel Settlement</h3>
             <p>
               The merchant agent can withdraw their users payments at a later
@@ -62,11 +63,11 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        <div className="step-connector"></div>
+        <div className={styles.stepConnector}></div>
 
-        <div className="how-step">
-          <div className="step-number">05</div>
-          <div className="step-content">
+        <div className={styles.howStep}>
+          <div className={styles.stepNumber}>05</div>
+          <div className={styles.stepContent}>
             <h3>Eat. Pay. Repeat</h3>
             <p>
               The user can repeat step 1 when they want and enjoy instant
@@ -76,11 +77,8 @@ export default function HowItWorks() {
         </div>
       </div>
 
-      <div className="how-cta">
-        {/* <p className="how-cta-text"> */}
-        {/*   Want to know more? Check out our Docs and Whitepaper. */}
-        {/* </p> */}
-        <p className="how-cta-text">Want to know more?</p>
+      <div className={styles.howCta}>
+        <p className={styles.howCtaText}>Want to know more?</p>
         <div
           style={{
             display: "flex",
@@ -89,12 +87,9 @@ export default function HowItWorks() {
             flexWrap: "wrap",
           }}
         >
-          <a href="/docs" className="btn btn-outline">
+          <a href="/docs" className={`${styles.btn} ${styles.btnOutline}`}>
             Read the Docs
           </a>
-          {/* <a href="/whitepaper" className="btn btn-outline"> */}
-          {/*   Read the Whitepaper */}
-          {/* </a> */}
         </div>
       </div>
     </section>

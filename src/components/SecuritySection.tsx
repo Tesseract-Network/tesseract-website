@@ -1,8 +1,10 @@
+import styles from "@site/src/css/landing.module.css";
+
 export default function SecuritySection() {
   return (
-    <section className="security-section">
-      <div className="security-content">
-        <div className="security-badge">
+    <section className={styles.securitySection}>
+      <div className={styles.securityContent}>
+        <div className={styles.securityBadge}>
           <svg
             width="48"
             height="48"
@@ -17,21 +19,25 @@ export default function SecuritySection() {
             <path d="M9 12l2 2 4-4"></path>
           </svg>
         </div>
-        <div className="security-text">
+        <div className={styles.securityText}>
           <h3>Audited & Verified</h3>
           <p>
             Our protocol and contracts have been fully independently audited by{" "}
-            <a 
-              href="https://www.trailofbits.com/" 
-              target="_blank" 
+            <a
+              href="https://www.trailofbits.com/"
+              target="_blank"
               rel="noopener noreferrer"
-              style={{ color: 'var(--accent-2)', textDecoration: 'none', fontWeight: 700 }}
+              style={{
+                color: "var(--accent-2)",
+                textDecoration: "none",
+                fontWeight: 700,
+              }}
             >
               Trail of Bits
-            </a>, one of the most reputable security
-            firms in blockchain.
+            </a>
+            , one of the most reputable security firms in blockchain.
           </p>
-          <a href="#audit-report" className="audit-link">
+          <a href="#audit-report" className={styles.auditLink}>
             View Audit Report →
           </a>
         </div>
@@ -39,4 +45,3 @@ export default function SecuritySection() {
     </section>
   );
 }
-

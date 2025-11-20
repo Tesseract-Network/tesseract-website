@@ -1,30 +1,31 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
+import styles from "@site/src/css/landing.module.css";
 
 const WORDS = [
-  'instant',
-  'trustless',
-  'universal',
-  'verifiable',
-  'zero delay',
-  'decentralized',
-  'better',
-]
+  "instant",
+  "trustless",
+  "universal",
+  "verifiable",
+  "zero delay",
+  "decentralized",
+  "better",
+];
 
 export default function LandingHero() {
-  const [index, setIndex] = useState(0)
-  const word = WORDS[index]
+  const [index, setIndex] = useState(0);
+  const word = WORDS[index];
 
   useEffect(() => {
     const t = setInterval(() => {
-      setIndex((i) => (i + 1) % WORDS.length)
-    }, 2000)
-    return () => clearInterval(t)
-  }, [])
+      setIndex((i) => (i + 1) % WORDS.length);
+    }, 2000);
+    return () => clearInterval(t);
+  }, []);
 
   return (
-    <section className="hero" id="hero">
+    <section className={styles.hero} id="hero">
       <video
-        className="video-bg"
+        className={styles.videoBg}
         src="/media/hero.mp4"
         autoPlay
         muted
@@ -32,11 +33,22 @@ export default function LandingHero() {
         playsInline
       />
 
-      <div className="hero-overlay">
-        <p className="hero-title">The <span key={word} className="accent word-anim">{word}</span> x402<br></br>facilitator</p>
-        <p className="hero-sub">Unlock AI agents transactions with <span className="fancy-underline">0 seconds</span> delay on Ethereum, Solana, XRP, TON and more</p>
+      <div className={styles.heroOverlay}>
+        <p className={styles.heroTitle}>
+          The{" "}
+          <span key={word} className={`${styles.accent} ${styles.wordAnim}`}>
+            {word}
+          </span>{" "}
+          x402
+          <br />
+          facilitator
+        </p>
+        <p className={styles.heroSub}>
+          Unlock AI agents transactions with{" "}
+          <span className={styles.fancyUnderline}>0 seconds</span> delay on
+          Ethereum, Solana, XRP, TON and more
+        </p>
       </div>
     </section>
-  )
+  );
 }
-

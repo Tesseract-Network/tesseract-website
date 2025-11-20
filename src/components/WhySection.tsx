@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import type { ReactElement } from "react";
+import styles from "@site/src/css/landing.module.css"; // module import
 
 interface Feature {
   id: string;
@@ -154,30 +155,23 @@ export default function WhySection() {
   useEffect(() => {
     if (isPaused) return;
 
-    // Reset progress when feature changes
     setProgress(0);
-
     const interval = setInterval(() => {
       setSelectedIndex((prev) => (prev + 1) % features.length);
-    }, 4500); // 4.5 seconds auto-rotation
-
+    }, 4500);
     return () => clearInterval(interval);
   }, [isPaused, selectedIndex]);
 
   useEffect(() => {
     if (isPaused) return;
 
-    // Animate progress bar
-    const duration = 4500; // Must match auto-rotation interval
-    const steps = 60; // 60 fps
+    const duration = 4500;
+    const steps = 60;
     const increment = 100 / steps;
     const stepDuration = duration / steps;
 
     const progressInterval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) return 100;
-        return prev + increment;
-      });
+      setProgress((prev) => (prev >= 100 ? 100 : prev + increment));
     }, stepDuration);
 
     return () => clearInterval(progressInterval);
@@ -199,28 +193,30 @@ export default function WhySection() {
   const selectedFeature = features[selectedIndex];
 
   return (
-    <section className="why-section" id="why">
-      <div className="section-header">
-        <h2 className="section-title">Why Tesseract?</h2>
-        <p className="section-subtitle">
+    <section className={styles.whySection} id="why">
+      <div className={styles.sectionHeader}>
+        <h2 className={styles.sectionTitle}>Why Tesseract?</h2>
+        <p className={styles.sectionSubtitle}>
           The payment infrastructure AI agents deserve
         </p>
       </div>
 
-      <div className="feature-overview-card">
-        <div className="feature-list">
+      <div className={styles.featureOverviewCard}>
+        <div className={styles.featureList}>
           {features.map((feature, index) => (
             <button
               key={feature.id}
-              className={`feature-item ${index === selectedIndex ? "active" : ""}`}
+              className={`${styles.featureItem} ${
+                index === selectedIndex ? styles.active : ""
+              }`}
               onMouseEnter={() => handleFeatureHover(index)}
               onMouseLeave={handleFeatureLeave}
             >
-              <div className="feature-item-icon">{feature.icon}</div>
-              <span className="feature-item-name">{feature.name}</span>
-              <div className="feature-item-progress">
+              <div className={styles.featureItemIcon}>{feature.icon}</div>
+              <span className={styles.featureItemName}>{feature.name}</span>
+              <div className={styles.featureItemProgress}>
                 <div
-                  className="feature-item-progress-bar"
+                  className={styles.featureItemProgressBar}
                   style={{
                     width: index === selectedIndex ? `${progress}%` : "0%",
                   }}
@@ -230,11 +226,15 @@ export default function WhySection() {
           ))}
         </div>
 
-        <div className="feature-detail">
-          <div key={selectedFeature.id} className="feature-detail-content">
-            <div className="feature-detail-icon">{selectedFeature.icon}</div>
-            <h3 className="feature-detail-title">{selectedFeature.title}</h3>
-            <p className="feature-detail-description">
+        <div className={styles.featureDetail}>
+          <div key={selectedFeature.id} className={styles.featureDetailContent}>
+            <div className={styles.featureDetailIcon}>
+              {selectedFeature.icon}
+            </div>
+            <h3 className={styles.featureDetailTitle}>
+              {selectedFeature.title}
+            </h3>
+            <p className={styles.featureDetailDescription}>
               {selectedFeature.description}
             </p>
           </div>

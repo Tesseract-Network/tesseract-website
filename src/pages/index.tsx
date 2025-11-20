@@ -1,4 +1,4 @@
-import "./index.css";
+import styles from "@site/src/css/landing.module.css";
 // import Navbar from "@site/src/components/Navbar";
 import LandingHero from "@site/src/components/LandingHero";
 import WhySection from "@site/src/components/WhySection";
@@ -19,7 +19,7 @@ function App() {
 
       <LandingHero />
 
-      <div className="site-container">
+      <div className={styles.siteContainer}>
         <WhySection />
         <HowItWorks />
         <SecuritySection />
