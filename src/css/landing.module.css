@@ -81,7 +81,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .heroOverlay {
@@ -314,7 +314,7 @@
 
 .featureDetailContent {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   max-width: 600px;
   animation: fadeSlideIn 0.5s ease;
 }
@@ -588,7 +588,7 @@
   margin: 0 auto 1.5rem;
   color: var(--accent);
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .opensourceContent h2 {
@@ -597,7 +597,7 @@
   margin: 0 0 1rem 0;
   color: #ffffff;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .opensourceContent p {
@@ -606,7 +606,7 @@
   margin: 0 0 2rem 0;
   line-height: 1.7;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .opensourceCta {
@@ -615,7 +615,7 @@
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .opensourceCta .btn {

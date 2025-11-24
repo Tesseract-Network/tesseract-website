@@ -32,7 +32,7 @@ export default function OpenSourceCTA() {
             </svg>
             Check Out Our Repo
           </a>
-          <a href="#docs" className={`${styles.btn} ${styles.btnOutline}`}>
+          <a href="/docs" className={`${styles.btn} ${styles.btnOutline}`}>
             Read the Docs
           </a>
         </div>
