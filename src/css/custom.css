@@ -1,6 +1,7 @@
 /* global variables */
 :root {
   --bg: #0f1720;
+  --white: #fafbff;
   --card: #0b1220;
   --muted: #9aa4b2;
   --accent: #7c5cff;
@@ -68,6 +69,7 @@
 }
 
 /* Gradient underline effect */
+/* .menu__link, */
 .navbar__item.navbar__link {
   position: relative;
   color: #ffffff;
@@ -76,6 +78,7 @@
   transition: color 0.3s ease;
 }
 
+/* .menu__link, */
 .navbar__item.navbar__link::after {
   content: "";
   position: absolute;
@@ -89,17 +92,12 @@
   transition: transform 0.3s ease;
 }
 
+/* .menu__link, */
 .navbar__item.navbar__link:hover {
   color: var(--accent-2);
 }
 
+/* .menu__link, */
 .navbar__item.navbar__link:hover::after {
   transform: scaleX(1);
-}
-
-.navbar__item.navbar__link {
-  transition: color 0.3s ease;
-}
-.navbar__item.navbar__link:hover {
-  color: var(--accent-2);
 }
