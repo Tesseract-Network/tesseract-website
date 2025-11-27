@@ -50,13 +50,8 @@ Sections:
 
 - Refactor the wording to not only consider AI agents, but also other things, there are some examples on <https://www.x402.org/>. I mean, probably the best thing would be of having a website for z402 and a website for Tesseract focusing on AI.
 - Add the fact that the z402 has no fees as a protocol (x402 says the same)
-- Fix the color of the title (it's not white...)
-- Fix the viewport (for some reason I can scroll on the right...)
-- Fix again the navbar... The logo is not on the left and the button not on the right...
+- Improve navbar by adding a call to action button
 - Understand how to truly integrate Docusaurus
 - Fix "Universal"/"Open Source" entries in the why section, they have the same symbol, also you talk about open source later, maybe it's redundant to have it also here
 - Remove the pepsi logo and use your own
-- You have a navbar in the lending page and one in the docs, they don't match... Same for the footer
-- There are some evident color problems in the docs, I guess it's because of the custom css file that I edited
 - Consider migrating the docs to <https://www.mintlify.com/>, it has an integrated mcp server, that's a killer feature
-- Be sure in implementation of the smart contract to make the seller pay for the fees, not the buyer
