@@ -14,7 +14,7 @@ export default function HowItWorks() {
         <div className={styles.howStep}>
           <div className={styles.stepNumber}>01</div>
           <div className={styles.stepContent}>
-            <h3>Payment Pre-authorization</h3>
+            <h3>Approval for future payments</h3>
             <p>
               The buyer AI agent enables instant payments to a merchant using
               our SDK, under the hood it's using our smart contract.
