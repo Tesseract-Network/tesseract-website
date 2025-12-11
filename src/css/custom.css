@@ -1,10 +1,23 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* global variables */
+:root {
+  --bg: #0f1720;
+  --white: #fafbff;
+  --card: #0b1220;
+  --muted: #9aa4b2;
+  --accent: #7c5cff;
+  --accent-2: #61dafb;
+  --glass: rgba(255, 255, 255, 0.04);
+}
 
-/* You can override the default Infima variables here. */
+/* Full viewport */
+/* html, */
+/* body, */
+/* #root { */
+/*   height: 100%; */
+/*   width: 100%; */
+/* } */
+
+/* Original white theme */
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -17,14 +30,74 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+[data-theme="dark"] {
+  /* Primary brand color for buttons, links, badges, pagination, highlights */
+  --ifm-color-primary: var(--accent);
+  --ifm-color-primary-dark: #6f52e6;
+  --ifm-color-primary-darker: #5c45c2;
+  --ifm-color-primary-darkest: #473596;
+  --ifm-color-primary-light: var(--accent-2);
+  --ifm-color-primary-lighter: #77e0ff;
+  --ifm-color-primary-lightest: #a7efff;
+
+  /* Link styling override (Infima normally uses primary colors for links) */
+  --ifm-link-color: var(--accent-2);
+  --ifm-link-hover-color: var(--accent);
+
+  /* Fix inconsistent background colors across pages */
+  --ifm-background-color: var(--bg); /* main page background */
+  --ifm-background-color-rgb: 15, 23, 32;
+
+  /* Surfaces: cards, docs content, blog posts */
+  --ifm-background-surface-color: var(--card); /* elevated blocks */
+  --ifm-background-surface-color-rgb: 11, 18, 32;
+
+  /* Navbar + footer match main background */
+  --ifm-navbar-background-color: var(--bg);
+  --ifm-footer-background-color: var(--bg);
+
+  /* Base text color (Docusaurus uses this for most content text) */
+  --ifm-font-color-base: #eef3f8;
+
+  /* Code blocks */
+  --ifm-pre-background: var(--card);
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+
+  /* Borders + dividers tuned for dark UI */
+  --ifm-color-emphasis-300: rgba(255, 255, 255, 0.12);
+  --ifm-color-emphasis-200: rgba(255, 255, 255, 0.06);
+}
+
+/* Gradient underline effect */
+/* .menu__link, */
+.navbar__item.navbar__link {
+  position: relative;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* .menu__link, */
+.navbar__item.navbar__link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* .menu__link, */
+.navbar__item.navbar__link:hover {
+  color: var(--accent-2);
+}
+
+/* .menu__link, */
+.navbar__item.navbar__link:hover::after {
+  transform: scaleX(1);
 }
