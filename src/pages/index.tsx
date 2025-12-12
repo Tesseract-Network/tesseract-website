@@ -1,6 +1,6 @@
 import styles from "@site/src/css/landing.module.css";
 import LandingHero from "@site/src/components/LandingHero";
-import IntroSection from "@site/src/components/Intro";
+import IntroSection from "@site/src/components/IntroSection";
 import WhySection from "@site/src/components/WhySection";
 import HowItWorks from "@site/src/components/HowItWorks";
 import SecuritySection from "@site/src/components/SecuritySection";
@@ -9,13 +9,10 @@ import OpenSourceCTA from "@site/src/components/OpenSourceCTA";
 
 import React from "react";
 import Layout from "@theme/Layout";
-// import Layout from '@theme/Layout';
 
 function App() {
   return (
     <Layout>
-      {/* <Navbar /> */}
-
       <LandingHero />
 
       <div className={styles.siteContainer}>
@@ -26,8 +23,6 @@ function App() {
         <TrustedBy />
         <OpenSourceCTA />
       </div>
-
-      {/* <Footer /> */}
     </Layout>
   );
 }

@@ -1,4 +1,5 @@
 import styles from "@site/src/css/landing.module.css";
+import Link from "@docusaurus/Link";
 
 export default function HowItWorks() {
   return (
@@ -6,7 +7,8 @@ export default function HowItWorks() {
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>How It Works</h2>
         <p className={styles.sectionSubtitle}>
-          Instant payments powered by z402, the x402 extension with 0 delay
+          Instant payments powered by the{" "}
+          <Link to={"/docs/z402/introduction"}>z402 protocol</Link>
         </p>
       </div>
 
@@ -16,8 +18,8 @@ export default function HowItWorks() {
           <div className={styles.stepContent}>
             <h3>Approval for future payments</h3>
             <p>
-              The buyer AI agent enables instant payments to a merchant using
-              our SDK, under the hood it's using our smart contract.
+              The buyer agent enables future instant payments to a seller agent,
+              under the hood it's using our smart contract
             </p>
           </div>
         </div>
@@ -29,8 +31,9 @@ export default function HowItWorks() {
           <div className={styles.stepContent}>
             <h3>Initialize Payment</h3>
             <p>
-              The buyer agent asks a merchant for a service and initiates a
-              payment through our SDK, all in the same HTTP request.
+              The buyer agent buys a service offered by the seller agent and
+              sends a cryptographic proof of the payment, all in the same HTTP
+              request
             </p>
           </div>
         </div>
@@ -42,9 +45,9 @@ export default function HowItWorks() {
           <div className={styles.stepContent}>
             <h3>Instant Verification</h3>
             <p>
-              The merchant verifies the payment is valid completely off-chain,
-              allowing for instant transactions. No extra HTTP requests, no
-              waiting for the blockchain.
+              The seller agent verifies the payment is valid completely
+              off-chain, allowing for instant transactions. No extra HTTP
+              requests, no waiting for the blockchain
             </p>
           </div>
         </div>
@@ -56,9 +59,10 @@ export default function HowItWorks() {
           <div className={styles.stepContent}>
             <h3>Parallel Settlement</h3>
             <p>
-              The merchant agent can withdraw their users payments at a later
-              moment or in parallel during execution, with no impact on UX. They
-              can use our SDK that calls our smart contract.
+              The seller agent can withdraw the buyer payment at a later moment
+              or in parallel during execution, using the payment proof they
+              have. The smart contract will verify independently the correctness
+              of the payment proof
             </p>
           </div>
         </div>
@@ -70,7 +74,7 @@ export default function HowItWorks() {
           <div className={styles.stepContent}>
             <h3>Eat. Pay. Repeat</h3>
             <p>
-              The user can repeat step 1 when they want and enjoy instant
+              The buyer agent can repeat step 2 when they want and enjoy instant
               payments with no limits!
             </p>
           </div>
@@ -87,9 +91,15 @@ export default function HowItWorks() {
             flexWrap: "wrap",
           }}
         >
-          <a href="/docs" className={`${styles.btn} ${styles.btnOutline}`}>
+          <Link to="/docs" className={`${styles.btn} ${styles.btnOutline}`}>
             Read the Docs
-          </a>
+          </Link>
+          {/* <Link */}
+          {/*   to="/core-values" */}
+          {/*   className={`${styles.btn} ${styles.btnOutline}`} */}
+          {/* > */}
+          {/*   Read Core Values */}
+          {/* </Link> */}
         </div>
       </div>
     </section>

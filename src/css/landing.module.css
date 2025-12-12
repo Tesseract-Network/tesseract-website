@@ -678,7 +678,7 @@
 
 /* Collaboration Network */
 .meshSection {
-  padding: 5rem 0;
+  padding: 0rem 0;
   position: relative;
 }
 
@@ -692,7 +692,7 @@
   /*   rgba(124, 92, 255, 0.05), */
   /*   rgba(97, 218, 251, 0.03) */
   /* ); */
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  /* border: 1px solid rgba(255, 255, 255, 0.06); */
   overflow: hidden;
 }
 
@@ -729,7 +729,7 @@
 }
 
 .meshNodeIcon:hover {
-  transform: scale(1.08);
+  transform: scale(1.5);
 }
 
 /* Hover card */

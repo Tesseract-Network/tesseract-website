@@ -52,6 +52,9 @@ Sections:
 - Add the fact that the z402 has no fees as a protocol (x402 says the same)
 - Improve navbar by adding a call to action button
 - Understand how to truly integrate Docusaurus
-- Fix "Universal"/"Open Source" entries in the why section, they have the same symbol, also you talk about open source later, maybe it's redundant to have it also here
+- Use an actual icon package in the Why Section (and also elsewhere)
+- Add a "Core Values" page or blog post
+- Fix "Universal"/"Open Source" entries in the why section, they have the same icon, also you talk about open source later, maybe it's redundant to have it also here
 - Remove the pepsi logo and use your own
 - Consider migrating the docs to <https://www.mintlify.com/>, it has an integrated mcp server, that's a killer feature
+- There's a bug in the mesh. If two nodes have the same x or y the edge between them is not shown.

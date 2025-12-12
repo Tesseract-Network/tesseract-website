@@ -12,11 +12,11 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    id: "zero-delay",
-    name: "Zero Network Delay",
-    title: "Zero Network Delay",
+    id: "truly-instant",
+    name: "Truly instant",
+    title: "Truly instant",
     description:
-      "Create agentic systems with 0 seconds network delay due to payment processing. Instant transactions mean your AI agents never wait.",
+      "Make and receive payments with 0 milliseconds network delay. Your agents can't go faster than this!",
     icon: (
       <svg
         width="32"
@@ -33,11 +33,11 @@ const features: Feature[] = [
     ),
   },
   {
-    id: "best-ux",
-    name: "Best UX achieved",
-    title: "Best UX achieved",
+    id: "no-protocol-fees",
+    name: "No protocol fees",
+    title: "No protocol fees",
     description:
-      "Offer the best possible UX to your users with instant and gasless transactions. They experience seamless, real-time interactions with your agents.",
+      "The underling protocol, z402, is an open standard that doesn't charge any fees. Enjoy subcent payments!",
     icon: (
       <svg
         width="32"
@@ -49,32 +49,7 @@ const features: Feature[] = [
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-        <polyline points="9 12 11 14 15 10"></polyline>
-      </svg>
-    ),
-  },
-  {
-    id: "instant-quickstart",
-    name: "Instant Quickstart",
-    title: "Instant Quickstart",
-    description:
-      "Pay and get paid in no time with our quickstart: no credit card, registration or whatsoever required. Start building in minutes with our SDK, if you're already running an x402 client or server it takes even less and you stay compatible with your current configuration.",
-    icon: (
-      <svg
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
-        <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
-        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
-        <line x1="12" y1="20" x2="12.01" y2="20"></line>
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
       </svg>
     ),
   },
@@ -83,7 +58,7 @@ const features: Feature[] = [
     name: "Secure",
     title: "Secure",
     description:
-      "Get peace of mind knowing your payments are processed by a trustless, unstoppable, audited smart contract. You don't need to trust anyone.",
+      "Get peace of mind knowing your payments are processed by a trustless, unstoppable, audited smart contract. You don't need to trust anyone, not even us.",
     icon: (
       <svg
         width="32"
@@ -101,11 +76,11 @@ const features: Feature[] = [
     ),
   },
   {
-    id: "universal",
-    name: "Universal",
-    title: "Universal",
+    id: "extremely-compatible",
+    name: "Extremely compatible",
+    title: "Extremely compatible",
     description:
-      "Our protocol z402 is built to be blockchain agnostic, it can be ported to any blockchain that supports smart contracts",
+      "The z402 is compatibile with x402 and supports almost all blockchains, including Ethereum, XRP and all EVM compatible chains, more soon!\nIf you're coming for x402, this greatly extends your reach compared to x402.",
     icon: (
       <svg
         width="32"
@@ -123,11 +98,33 @@ const features: Feature[] = [
     ),
   },
   {
+    id: "fully-private",
+    name: "Fully Private",
+    title: "Fully Private",
+    description:
+      "In order to work, the z402 protocol needs a buyer, a seller and the blockchain, that's it. No registrations, no restrictions, no selling your data.\nPlus, all our software is designed with privacy in mind following a stric no logging policy. Did you notice there is no cookie banner? Did I mention we don't store any cookies?",
+    icon: (
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        <polyline points="9 12 11 14 15 10"></polyline>
+      </svg>
+    ),
+  },
+  {
     id: "open-source",
     name: "Open Source",
     title: "Open Source",
     description:
-      "Enjoy open source code you can trust and run yourself. Our contracts and our facilitator are free and open source software for you to explore, create and share. Even our protocol z402 is an open standard that extends and improves x402.",
+      "Enjoy open source code you can trust and run yourself. All our software and smart contracts are free and open source software for you to explore, hack and share. Our protocol z402 is an open standard that extends and improves x402.",
     icon: (
       <svg
         width="32"
@@ -141,6 +138,30 @@ const features: Feature[] = [
       >
         <polyline points="16 18 22 12 16 6"></polyline>
         <polyline points="8 6 2 12 8 18"></polyline>
+      </svg>
+    ),
+  },
+  {
+    id: "quickstart",
+    name: "Quickstart",
+    title: "Quickstart",
+    description:
+      "Pay and get paid in no time with our quickstart: no credit card, registration or whatsoever required. Start building in minutes with our SDK, if you're already running on x402  it takes even less and you stay compatible with your current configuration.",
+    icon: (
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+        <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+        <line x1="12" y1="20" x2="12.01" y2="20"></line>
       </svg>
     ),
   },

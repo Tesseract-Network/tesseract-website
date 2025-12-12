@@ -1,4 +1,14 @@
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+z402:
+  label: z402
+  permalink: /z402
+  description: The zero delay agentic payment protocol
+
+x402:
+  label: x402
+  permalink: /x402
+  description: The payment protocol by Coinbase
+
+internet of agents:
+  label: Internet of Agents
+  permalink: /internet-of-agents
+  description: A network of autonomous agents that collaborates on complex tasks

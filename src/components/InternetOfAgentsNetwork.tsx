@@ -12,87 +12,139 @@ interface MeshNode {
 }
 
 const getCardPlacement = (y: number) => {
-  if (y < 50) return "down";
-  if (y >= 50) return "up";
+  if (y <= 50) return "down";
+  if (y > 50) return "up";
 };
 
 const NODES: MeshNode[] = [
   {
-    id: "manager-human",
-    x: 18,
-    y: 28,
+    id: "alice-human",
+    x: 10,
+    y: 49,
     type: "human",
-    name: "Product Manager",
-    description: "Defines goals and constraints for AI agents",
-    icon: "/media/collaboration-network/manager_human.png",
+    name: "Alice",
+    description: "Wants to build the next big thing!",
+    icon: "/media/collaboration-network/alice_human.png",
+  },
+  {
+    id: "alice-bot",
+    x: 20,
+    y: 50,
+    type: "bot",
+    name: "Alice's Agent",
+    description:
+      "Knows Alice well and leverages other expert agents to help her do her thing",
+    icon: "/media/collaboration-network/alice_bot.png",
   },
   {
     id: "math-bot",
     x: 55,
     y: 18,
     type: "bot",
-    name: "Math Bot",
-    description: "Performs pricing, optimization and risk calculations",
+    name: "Math Agent",
+    description:
+      "Proves theorems autonomously, does your integrals and checks for mistakes",
     icon: "/media/collaboration-network/math_bot.png",
   },
   {
-    id: "operator-human",
-    x: 78,
-    y: 55,
-    type: "human",
-    name: "Operator",
-    description: "Executes real-world actions with AI assistance",
-    icon: "/media/collaboration-network/operator_human.png",
+    id: "operator-bot",
+    x: 80,
+    y: 45,
+    type: "bot",
+    name: "Operator Agent",
+    description:
+      "Executes real-world manual actions, from house keeping to carpentry",
+    icon: "/media/collaboration-network/operator_bot.png",
   },
   {
     id: "artist-bot",
-    x: 32,
-    y: 72,
+    x: 30,
+    y: 70,
     type: "bot",
-    name: "Artist Bot",
-    description: "Generates visual assets and creative outputs",
+    name: "Artist Agent",
+    description: "Generates creative visual assets: images, audio and videos",
     icon: "/media/collaboration-network/artist_bot.png",
   },
   {
     id: "programmer-bot",
-    x: 58,
-    y: 62,
+    x: 60,
+    y: 80,
     type: "bot",
-    name: "Programmer Bot",
+    name: "Programmer Agent",
     description: "Writes, tests and refactors production code",
     icon: "/media/collaboration-network/programmer_bot.png",
   },
   {
-    id: "developer-human",
+    id: "ai-engineer-human",
     x: 42,
     y: 40,
     type: "human",
-    name: "Developer",
-    description: "Builds systems by orchestrating AI agents",
-    icon: "/media/collaboration-network/developer_human.png",
+    name: "AI engineer",
+    description: "Builds systems by creating and orchestrating AI agents",
+    icon: "/media/collaboration-network/ai_engineer_human.png",
   },
   {
-    id: "payment-bot",
-    x: 70,
-    y: 38,
+    id: "writer-bot",
+    x: 45,
+    y: 20,
     type: "bot",
-    name: "Payment Agent",
-    description: "Handles autonomous transactions and settlements",
-    icon: "/media/collaboration-network/payment_bot.png",
+    name: "Writer Agent",
+    description:
+      "Has read it all. Can help you write blog posts, essays, poems and everything in between",
+    icon: "/media/collaboration-network/writer_bot.png",
+  },
+  {
+    id: "philosopher-human",
+    x: 65,
+    y: 40,
+    type: "bot",
+    name: "Philosopher",
+    description: "Helps us give a meaning to life, or does the opposite",
+    icon: "/media/collaboration-network/philosopher_human.png",
+  },
+  {
+    id: "researcher-human",
+    x: 65,
+    y: 60,
+    type: "human",
+    name: "Researcher",
+    description: "Pushes forward the boundary of our knowledge",
+    icon: "/media/collaboration-network/researcher_human.png",
+  },
+  {
+    id: "product-manager-bot",
+    x: 30,
+    y: 30,
+    type: "bot",
+    name: "Product Manager Agent",
+    description:
+      "Creates business plans, gives ideas and insights for successful products",
+    icon: "/media/collaboration-network/business_bot.png",
   },
 ];
 
 const EDGES: [string, string][] = [
-  ["manager-human", "math-bot"],
-  ["math-bot", "payment-bot"],
-  ["payment-bot", "operator-human"],
-  ["operator-human", "artist-bot"],
-  ["artist-bot", "developer-human"],
-  ["developer-human", "programmer-bot"],
-  ["programmer-bot", "math-bot"],
+  ["math-bot", "programmer-bot"],
+  ["math-bot", "operator-bot"],
+  ["programmer-bot", "operator-bot"],
+  ["philosopher-human", "writer-bot"],
+  ["philosopher-human", "artist-bot"],
+  ["ai-engineer-human", "math-bot"],
+  ["ai-engineer-human", "programmer-bot"],
+  ["ai-engineer-human", "artist-bot"],
+  ["alice-human", "alice-bot"],
+  ["alice-bot", "artist-bot"],
+  ["alice-bot", "programmer-bot"],
+  ["alice-bot", "product-manager-bot"],
+  ["product-manager-bot", "programmer-bot"],
+  ["product-manager-bot", "writer-bot"],
+  ["product-manager-bot", "artist-bot"],
+  ["researcher-human", "operator-bot"],
+  ["researcher-human", "math-bot"],
+  ["researcher-human", "ai-engineer-human"],
 ];
 
-export default function MeshNetwork() {
+export default function InternetOfAgentsNetworNetwork() {
   const [hovered, setHovered] = useState<MeshNode | null>(null);
 
   return (

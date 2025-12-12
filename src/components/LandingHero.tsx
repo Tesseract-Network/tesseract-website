@@ -27,7 +27,7 @@ import styles from "@site/src/css/landing.module.css";
 const WORDS = [
   "agentic",
   "instant",
-  "low cost",
+  "zero fee",
   "universal",
   "trustless",
   "decentralized",
@@ -63,7 +63,7 @@ export default function LandingHero() {
             {word}
           </span>{" "}
           <br />
-          AI payment method
+          payment solution
         </p>
         <p className={styles.heroSub}>
           Unlock AI agents transactions with{" "}
