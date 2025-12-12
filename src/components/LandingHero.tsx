@@ -27,6 +27,7 @@ import styles from "@site/src/css/landing.module.css";
 const WORDS = [
   "agentic",
   "instant",
+  "low cost",
   "universal",
   "trustless",
   "decentralized",

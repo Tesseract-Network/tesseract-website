@@ -675,3 +675,108 @@
     flex-direction: column;
   }
 }
+
+/* Collaboration Network */
+.meshSection {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.meshContainer {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  /* border-radius: 20px; */
+  /* background: linear-gradient( */
+  /*   135deg, */
+  /*   rgba(124, 92, 255, 0.05), */
+  /*   rgba(97, 218, 251, 0.03) */
+  /* ); */
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+/* Lines */
+.meshLines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Define gradient inside the SVG when rendered */
+.meshLines defs linearGradient {
+  stop-color: var(--accent);
+}
+
+/* Nodes */
+.meshNode {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.meshNodeIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.2s ease;
+}
+
+.meshNodeIcon:hover {
+  transform: scale(1.08);
+}
+
+/* Hover card */
+
+/* Hover card base */
+.meshCard {
+  position: absolute;
+  width: 200px;
+  padding: 1rem;
+  background: var(--glass);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+  text-align: left;
+}
+
+.meshCard strong {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.meshCard p {
+  margin: 0.35rem 0 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Direction modifiers */
+.meshCardUp {
+  transform: translate(-50%, -120%);
+}
+
+.meshCardDown {
+  transform: translate(-50%, 20%);
+}
+
+/* Small screens */
+@media (max-width: 680px) {
+  .meshContainer {
+    height: 450px;
+  }
+
+  .meshNodeIcon {
+    width: 40px;
+    height: 40px;
+  }
+}
