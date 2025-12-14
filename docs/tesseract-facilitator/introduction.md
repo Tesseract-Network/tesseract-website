@@ -50,6 +50,8 @@ At the moment we support the following networks:
 
 - Ethereum: there is no x402 facilitator supporting Ethereum, since Ethereum block time is long (12 seconds) this makes sense only with z402.
 - XRP: there is no x402 facilitator supporting XRP, enjoy 0 delay transactions with XRP!
-- Solana: faster than any other x402 facilitator and with low gas fees thanks to Solana
-- TON: there is no x402 facilitator supporting Ethereum, enjoy instant transactions in TON as well!
+- Solana: Coming soon!
+<!-- - Solana: faster than any other x402 facilitator and with low gas fees thanks to Solana -->
+- TON: Coming soon!
+<!-- - TON: there is no x402 facilitator supporting Ethereum, enjoy instant transactions in TON as well! -->
 - Polkadot: Coming soon!

@@ -695,6 +695,10 @@
   /* ); */
   /* border: 1px solid rgba(255, 255, 255, 0.06); */
   overflow: hidden;
+
+  /* TODO: Possible fixes for Safari */
+  /* overflow: clip; */
+  /* https://stackoverflow.com/questions/70138527/css-filter-blur-not-working-properly-on-safari */
 }
 
 /* Lines */

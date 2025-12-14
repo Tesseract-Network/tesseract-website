@@ -39,7 +39,7 @@ const NODES: MeshNode[] = [
   },
   {
     id: "math-bot",
-    x: 55,
+    x: 60,
     y: 18,
     type: "bot",
     name: "Math Agent",
@@ -49,7 +49,7 @@ const NODES: MeshNode[] = [
   },
   {
     id: "operator-bot",
-    x: 80,
+    x: 90,
     y: 45,
     type: "bot",
     name: "Operator Agent",
@@ -60,7 +60,7 @@ const NODES: MeshNode[] = [
   {
     id: "artist-bot",
     x: 30,
-    y: 70,
+    y: 90,
     type: "bot",
     name: "Artist Agent",
     description: "Generates creative visual assets: images, audio and videos",
@@ -68,7 +68,7 @@ const NODES: MeshNode[] = [
   },
   {
     id: "programmer-bot",
-    x: 60,
+    x: 65,
     y: 80,
     type: "bot",
     name: "Programmer Agent",
@@ -77,8 +77,8 @@ const NODES: MeshNode[] = [
   },
   {
     id: "ai-engineer-human",
-    x: 42,
-    y: 40,
+    x: 35,
+    y: 50,
     type: "human",
     name: "AI engineer",
     description: "Builds systems by creating and orchestrating AI agents",
@@ -96,7 +96,7 @@ const NODES: MeshNode[] = [
   },
   {
     id: "philosopher-human",
-    x: 65,
+    x: 70,
     y: 40,
     type: "bot",
     name: "Philosopher",
@@ -105,8 +105,8 @@ const NODES: MeshNode[] = [
   },
   {
     id: "researcher-human",
-    x: 65,
-    y: 60,
+    x: 70,
+    y: 55,
     type: "human",
     name: "Researcher",
     description: "Pushes forward the boundary of our knowledge",

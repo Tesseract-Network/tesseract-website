@@ -4,8 +4,8 @@ Let me introduce you [x402](https://www.x402.org/) and its enhanced variant **z4
 
 ## What is x402
 
-x402 is _An open protocol for internet-native payments_: it enables HTTP endpoints to request a payment to be accessed, the name comes from the long unused [HTTP 402 status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/402).
-x402 leverages blockchain technology and it's blockchain agnostic, meaning it can run on different blockchains. An x402 payment speed is also related to the blockchain that's using, in fact its speed is **capped by the speed of the blockchain**, z402 aims to solve this problem.
+x402 is _An open protocol for internet-native payments_ create by Base: it enables HTTP endpoints to request a payment to be accessed, the name comes from the long unused [HTTP 402 status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/402).
+x402 leverages blockchain technology and it's blockchain agnostic, meaning it can run on different blockchains. x402 satisfies most of our [](/blog/building-the-internet-of-agents-with-z402#requirements-for-an-internet-native-payment-protocol) payment speed is also related to the blockchain that's using, in fact its speed is **capped by the speed of the blockchain**, z402 aims to solve this problem.
 
 ## What is z402
 

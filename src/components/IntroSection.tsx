@@ -18,7 +18,8 @@ export default function IntroSection() {
         <p>
           We envision a world where humans and machines can collaborate and
           solve the hardest problems of our society. Tesseract is building the
-          payment layer that powers this vision: <b>z402</b>. Read our{" "}
+          payment layer that powers this vision: <b>z402</b>, making AI hire AI,
+          humans hire AI and AI hire humans. Read our{" "}
           <Link to="/blog/building-the-internet-of-agents-with-z402">
             introductory article
           </Link>{" "}
