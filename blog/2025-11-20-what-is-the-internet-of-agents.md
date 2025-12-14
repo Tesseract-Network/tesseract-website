@@ -28,7 +28,7 @@ We believe that an internet native protocol should have the following characteri
 5. scalable: the payment protocol should be able to scale almost without limit, like the internet itself.
 6. just as fast as the internet: the payment protocol shouldn't introduce any delay due to the protocol itself. When making a transaction as an HTTP request, it should be immediately clear that the transaction is valid, without the need of triggering more network requests.
 
-The first protocol to try tackle these problems was [x402](https://x402.org), created by Base; it satisfies (debatebly[^1]) all the requirements, except the 5th and 6th: x402 is **not** as fast/scalable as the internet, it is as fast/scalable as the underlining blockchain. We will later see how **z402** solved these problems, nevertheless, x402 enabled new interesting use cases, in particular the constitution an **Internet of Agents**.
+The first protocol to try tackle these problems was [x402](https://x402.org), created by Base; it satisfies (debatebly[^x402-decentralization]) all the requirements, except the 5th and 6th: x402 is **not** as fast/scalable as the internet, it is as fast/scalable as the underlining blockchain. We will later see how **z402** solved these problems, nevertheless, x402 enabled new interesting use cases, in particular the constitution an **Internet of Agents**.
 
 ## Internet of Agents architecture
 
@@ -53,7 +53,7 @@ Another advantage of z402 is that, by design, it can support blockchain with lon
 
 ### Use cases
 
-Here is a (incomplete) list of use cases of z402, along with a comparison with existing services[^2]:
+Here is a (incomplete) list of use cases of z402, along with a comparison with existing services[^info-disclaimer]:
 
 - On demand content with no minimum limit: Today a popular business model is the subscription business model, we believe it can be overtaken by an on demand business model where a user makes request for a specific content they need not an estensive offering that they will never use, these models might as well coexist.
   - Streaming: Netflix's Standard subscription costs 17,99\$ a month. An alternative streaming service using z402 could offer to pay 0.25\$ to rend a single movie or even charge per minutes watched.
@@ -97,19 +97,19 @@ Choose x-mode every time you are buying a service/good from a seller and you don
 
 Let's compare z402 with other payment methods, including x402, Stipe and PayPal.
 
-#### Pricing and speed[^2]
+#### Pricing and speed[^info-disclaimer]
 
-| Payment Method                        | Typical Fees    | Valid payment | Settlement                              | Scalability               | Chargeback Risk     |
-| ------------------------------------- | --------------- | ------------- | --------------------------------------- | ------------------------- | ------------------- |
-| Credit Card                           | $0.30 + 2.9%    | ~1s           | Days (batch)                            | 65k TPS                   | Yes, up to 120d     |
-| PayPal                                | ~3% + fixed fee | ~1s           | Days                                    | Unknown                   | Yes                 |
-| Stripe                                | 2.9% + 0.30\$   | ~1s           | 1-3 days                                | >13k TPS                  | Yes                 |
-| Stripe (Pay with Crypto)              | \>1.5%          | ~1s           | Depends on blockchain                   | Depends on blockchain     | No – not reversible |
-| Ethereum L1                           | 1–5\$ + gas     | 12 s          | 1–2 min euristic, 13 min finality       | 15–20 TPS                 | No – not reversible |
-| x402 (Base Flashblocks)               | \<0.001\$       | 200 ms[^5]    | 200 ms preconfirmation, 2s finality[^5] | Hundreds to thousands TPS | No – not reversible |
-| z402 (Base Flashblocks) (1k mean[^3]) | \<0.0001\$      | 0 ms          | whenever you want[^4]                   | TPS                       | No – not reversible |
-| z402 (Ethereum) (1k mean[^3])         | \<0.001\$       | 0 ms          | whenever you want[^4]                   | Potentially limitless     | No – not reversible |
-| z402 (Solana) (1k mean[^3])           | \<0.0001\$      | 0 ms          | whenever you want[^4]                   | Potentially limitless     | No – not reversible |
+| Payment Method                                    | Typical Fees    | Valid payment          | Settlement                                          | Scalability               | Chargeback Risk     |
+| ------------------------------------------------- | --------------- | ---------------------- | --------------------------------------------------- | ------------------------- | ------------------- |
+| Credit Card                                       | $0.30 + 2.9%    | ~1s                    | Days (batch)                                        | 65k TPS                   | Yes, up to 120d     |
+| PayPal                                            | ~3% + fixed fee | ~1s                    | Days                                                | Unknown                   | Yes                 |
+| Stripe                                            | 2.9% + 0.30\$   | ~1s                    | 1-3 days                                            | >13k TPS                  | Yes                 |
+| Stripe (Pay with Crypto)                          | \>1.5%          | ~1s                    | Depends on blockchain                               | Depends on blockchain     | No – not reversible |
+| Ethereum L1                                       | 1–5\$ + gas     | 12 s                   | 1–2 min euristic, 13 min finality                   | 15–20 TPS                 | No – not reversible |
+| x402 (Base Flashblocks)                           | \<0.001\$       | 200 ms[^base-finality] | 200 ms preconfirmation, 2s finality[^base-finality] | Hundreds to thousands TPS | No – not reversible |
+| z402 (Base Flashblocks) (1k mean[^z402-batching]) | \<0.0001\$      | 0 ms                   | whenever you want[^z402-settlement]                 | TPS                       | No – not reversible |
+| z402 (Ethereum) (1k mean[^z402-batching])         | \<0.001\$       | 0 ms                   | whenever you want[^z402-settlement]                 | Potentially limitless     | No – not reversible |
+| z402 (Solana) (1k mean[^z402-batching])           | \<0.0001\$      | 0 ms                   | whenever you want[^z402-settlement]                 | Potentially limitless     | No – not reversible |
 
 #### User experience
 
@@ -121,14 +121,16 @@ Let's compare z402 with other payment methods, including x402, Stipe and PayPal.
 
 ## Conclusion
 
-[^1]:
+I hope this post gave you a bunch of good reasons to start using and building on z402. If you're a dev, head over to our [docs](/docs), see you out there!
+
+[^x402-decentralization]:
     In some, fairly common, cases, x402 fails to be truly decentralized. For example if you run x402 on Base, Base infrastructure becomes a centralization point, because Base has only one sequencer (theirs), this causes [predictable pitfalls](https://coinfomania.com/base-l2-block-production-halt-centralization-risk/). This case is relevant since currently using x402 on Base with Flashblocks is the most used settings.
     In this case, the protocol is not failing by itself but in the way most people and agents, often unknowingly, use it.
 
-[^2]: The reported information on external companies is to be intended as explanatory and not accurate as it is outside of Tesseract's control, it's reported for your convenience. The reported information is subject to change, you can verify independently our claims by heading over to the respective companies website, if you find any incorrectness don't hesitated to contact us or open a pull request.
+[^info-disclaimer]: The reported information on external companies is to be intended as explanatory and not accurate nor complete as it is outside of Tesseract's control, it's reported for your convenience. The reported information is subject to change, you can verify independently our claims by heading over to the respective companies website, if you find any incorrectness don't hesitated to contact us or open a pull request.
 
-[^3]: Since z402 works in such a way that the more transactions you batch, the less fees are due per transaction, the fees here reported are calculated as a mean of 1000 batched transactions. Read more in the [docs](/docs). <!-- TODO: add the correct link when you create the page -->
+[^z402-batching]: Since z402 works in such a way that the more transactions you batch, the less fees are due per transaction, the fees here reported are calculated as a mean of 1000 batched transactions. Read more in the [docs](/docs). <!-- TODO: add the correct link when you create the page -->
 
-[^4]: The settlement is done through the z402 smart contract, so users can know immediately if a payment is valid or not (i.e. if it will be settled or not), but the actual settlement time is chosen by the seller, the more they wait, the more they can batch transactions and save on blockchain fees. So, once the payment proof has been submitted, the settlement time is the settlement time of the blockchain (as for x402), the best strategy is to submit the payment proofs during execution or at later moment, this way the task execution is not delayed at all.
+[^z402-settlement]: The settlement is done through the z402 smart contract, so users can know immediately if a payment is valid or not (i.e. if it will be settled or not), but the actual settlement time is chosen by the seller, the more they wait, the more they can batch transactions and save on blockchain fees. So, once the payment proof has been submitted, the settlement time is the settlement time of the blockchain (as for x402), the best strategy is to submit the payment proofs during execution or at later moment, this way the task execution is not delayed at all.
 
-[^5]: Base uses Flashblocks that splits a 2 seconds block into ten 200 milliseconds blocks, in the Flashblocks FAQ, they claim that it is very rare that a flashblock fails to be included in a final block, but it's possible, this even it's called reorg, so the actual finality is still 2 seconds. You can read more technical details, for example, [here](https://sheys.substack.com/p/the-truth-about-flashblocks-on-base).
+[^base-finality]: Base uses Flashblocks that splits a 2 seconds block into ten 200 milliseconds blocks, in the Flashblocks FAQ, they claim that it is very rare that a flashblock fails to be included in a final block, but it's possible, this even it's called reorg, so the actual finality is still 2 seconds. You can read more technical details, for example, [here](https://sheys.substack.com/p/the-truth-about-flashblocks-on-base).
