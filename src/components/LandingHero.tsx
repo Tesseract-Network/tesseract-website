@@ -58,7 +58,7 @@ export default function LandingHero() {
 
       <div className={styles.heroOverlay}>
         <p className={styles.heroTitle}>
-          The
+          The{" "}
           <span key={word} className={`${styles.accent} ${styles.wordAnim}`}>
             {word}
           </span>{" "}
