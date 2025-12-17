@@ -42,23 +42,20 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ## Ideas/TODOs
 
-Sections:
+High priority:
 
-- The button "Get Started" should maybe be "Ship Now" or "Deploy", in any case it should redirect to the developer quickstart
+- Add more info on z402 costs and performances in the into post
+- Update the docs with an actual quickstart
+- Add example projects repo links
 
-Docs:
+Medium priority:
 
+- Improve navbar by adding a call to action button, with a button that says "Get Started" or "Ship Now" or "Deploy", in any case it should redirect to the developer quickstart
 - Add to the docs a section on batched payments/withdraws
+  Low priority:
 
-### Fixes
-
-- Refactor the wording to not only consider AI agents, but also other things, there are some examples on <https://www.x402.org/>. I mean, probably the best thing would be of having a website for z402 and a website for Tesseract focusing on AI.
-- Add the fact that the z402 has no fees as a protocol (x402 says the same)
-- Improve navbar by adding a call to action button
+- Use an actual icon package in the Why Section (and also elsewhere) and fix repeated icons for multiple entires
 - Understand how to truly integrate Docusaurus
-- Use an actual icon package in the Why Section (and also elsewhere)
 - Add a "Core Values" page or blog post
-- Fix "Universal"/"Open Source" entries in the why section, they have the same icon, also you talk about open source later, maybe it's redundant to have it also here
-- Remove the pepsi logo and use your own
-- Consider migrating the docs to <https://www.mintlify.com/>, it has an integrated mcp server, that's a killer feature
+- Consider adding an mcp server, <https://www.mintlify.com/> has one, that's a killer feature
 - There's a bug in the mesh. If two nodes have the same x or y the edge between them is not shown.
