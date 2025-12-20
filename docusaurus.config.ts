@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Tesseract",
-  tagline: "Zero seconds network latency payment method",
+  tagline: "The instant agent-first payment method",
   favicon: "logo.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://tesseractlabz.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Tesseract-Network", // Usually your GitHub org/user name.
+  organizationName: "Tesseract-Labz", // Usually your GitHub org/user name.
   projectName: "tesseract-website", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -43,7 +43,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/Tesseract-Network/tesseract-website/",
+          editUrl: "https://github.com/Tesseract-Labz/tesseract-website/",
         },
         blog: {
           showReadingTime: true,
@@ -53,7 +53,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/Tesseract-Network/tesseract-website/",
+          editUrl: "https://github.com/Tesseract-Labz/tesseract-website/",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -89,7 +89,7 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/Tesseract-Network/",
+          href: "https://github.com/Tesseract-Labz/",
           label: "GitHub",
           position: "right",
         },
@@ -133,12 +133,12 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/Tesseract-Network/",
+              href: "https://github.com/Tesseract-Labz/",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Tesseract`,
+      copyright: `Copyright © ${new Date().getFullYear()} Tesseract Labz`,
     },
     prism: {
       theme: prismThemes.github,

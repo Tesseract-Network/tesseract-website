@@ -16,7 +16,7 @@ export default function OpenSourceCTA() {
         </p>
         <div className={styles.opensourceCta}>
           <a
-            href="https://github.com/Tesseract-Network"
+            href="https://github.com/Tesseract-Labz"
             target="_blank"
             rel="noreferrer"
             className={`${styles.btn} ${styles.btnPrimary}`}
