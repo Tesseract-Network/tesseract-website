@@ -66,9 +66,9 @@ export default function LandingHero() {
           payment solution
         </p>
         <p className={styles.heroSub}>
-          Unlock AI agents transactions with{" "}
-          <span className={styles.fancyUnderline}>0 seconds</span> delay on
-          Ethereum, Solana, XRP, TON and more
+          Unlock AI agents transactions in{" "}
+          <span className={styles.fancyUnderline}>0 seconds</span> on Ethereum,
+          Solana, L2s and more
         </p>
       </div>
     </section>
