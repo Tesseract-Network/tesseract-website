@@ -7,13 +7,13 @@ tags: [internet of agents, z402, x402]
 
 # Building the Internet of Agents with z402
 
-AI agents are playing an increasingly important role in our lives, they're becoming always more capable and autonomous, the **Internet of Agents** is what will make them an organism that is greater than the sum of its parts.
+AI agents are playing an increasingly important role in our lives, they're becoming increasingly more capable and autonomous, the **Internet of Agents** is what will make them an organism that is greater than the sum of its parts.
 
 <!-- truncate -->
 
 ## History and motivation
 
-Each day millions of internet transactions are carried out, these transactions are done through different UIs and payment processors, there's no standard governing them. But why we would need it? Essentially a standard makes things easier, for developers and for users, moreover it creates a more fair environment, where there are no few "gatekeepers" companies handling the payments and can charge high fees, there's just the protocol and everybody can use it.
+Each day millions of internet transactions are carried out, these transactions are done through different UIs and payment processors, there's no standard governing them. But why would we need it? Essentially a standard makes things easier, for developers and for users, moreover it creates a more fair environment, where there are no few "gatekeepers" companies handling the payments and can charge high fees, there's just the protocol and everybody can use it.
 
 It's weird that such a universal human primitive like the payment is not encoded into the internet as a fundamental protocol, this wasn't supposed to be case, in fact, in 1997 in the [specification of HTTP/1.1](https://www.rfc-editor.org/rfc/rfc2068) a `402 - Payment Required` status code was added and kept for "later use". Still today, the 402 status code is considered non standard and there's no internet native payment protocol. But this is about to change.
 
@@ -24,11 +24,11 @@ We believe that an internet native protocol should have the following characteri
 1. No protocol fees: the protocol itself should be free to use. There could be some fees due to the technology used to make the transaction possible tho (blockchain for instance).
 2. No central control: the protocol shouldn't be controlled by any individual or organization with conflicts of interest.
 3. Integrated with HTTP: the protocol should be implemented in HTTP using the 402 status code, as per the 1997's original spec.
-4. Transactions have with no minimum (or very low): it must be possible to make subcent transactions.
+4. Transactions have no minimum (or very low): it must be possible to make subcent transactions.
 5. Scalable: the payment protocol should be able to scale almost without limit, like the internet itself.
 6. As fast as the internet: the payment protocol shouldn't introduce any delay due to the protocol itself. When making a transaction as an HTTP request, it should be immediately clear that the transaction is valid and there should be no need of triggering more network requests.
 
-The first protocol to try tackle these problems was [x402](https://x402.org), created by Base; it satisfies (debatebly[^x402-decentralization]) all the requirements except the 5th and 6th: x402 is **not** as fast and as scalable as the internet, it is just as fast and as scalable as the underlining blockchain. We will later see how **z402** solved these problems, nevertheless, x402 enabled new interesting use cases, in particular the constitution an **Internet of Agents**.
+The first protocol to try tackle these problems was [x402](https://x402.org), created by Base; it satisfies (debatably[^x402-decentralization]) all the requirements except the 5th and 6th: x402 is **not** as fast and as scalable as the internet, it is just as fast and as scalable as the underlining blockchain. We will later see how **z402** solved these problems, nevertheless, x402 enabled new interesting use cases, in particular the constitution an **Internet of Agents**.
 
 ## Internet of Agents architecture
 
@@ -69,7 +69,7 @@ Here is a (incomplete) list of use cases of z402, along with a comparison with e
   - High frequency trading: we can unlock trading stocks on any blockchain thanks to z402 instant transactions
   - Highly requested API endpoints: API endpoints with thousands of requests per seconds can be monetized with no performance impact
   - High throughput agents: agents that make thousands of requests per second can deliver instantly, thanks to z402
-- **On demand content with no minimum limit**: today a popular business model is the subscription business model, we believe it can be overtaken by an on demand business model where a user makes request for a specific content, not an estensive offering that they will never use, in some cases it might be appropriate for these models to coexist.
+- **On demand content with no minimum limit**: today a popular business model is the subscription business model, we believe it can be overtaken by an on demand business model where a user makes request for a specific content, not an extensive offering that they will never use, in some cases it might be appropriate for these models to coexist.
   - Streaming: Netflix's Standard subscription costs 17,99\$ a month. An alternative streaming service using z402 could offer to pay 0.25\$ to rent a single movie or even charge per minutes watched.
   - Content creator economy: content creators get mainly monetized through sponsoring, for creators with a smaller public this is difficult to achieve. A simple "tipping service" could be developed to integrate into existing social platforms and be set to have a low minimum (ex. 0.01\$), tipping small creators is now possible. Another notable case is the economy around exclusive, paywalled, content, offered by individual creators: services like OnlyFans charge 20% on all earnings and imposes a minimum PPV (pay per view) fee usually forcing creators to bundle multiple media; an alternative service using z402 could offer much lower rates and a low limit on PPV content (cents)
   - Paywalls: paywalls block access to content and unlock it after paying a subscription, an alternative paywall could use z402 to create a paywall that unlocks after a micropayment, this way customers don't need to subscribe to content they might never need.
@@ -79,7 +79,7 @@ Here is a (incomplete) list of use cases of z402, along with a comparison with e
 Since z402 is an extension of x402, it offers two operative modes:
 
 - x-mode: a 100\% x402 compatible mode, following the same specs
-- z-mode: what make z402 special, with instant payments, added scalability and lower fees on batched transactions
+- z-mode: what makes z402 special, with instant payments, added scalability and lower fees on batched transactions
 
 In short, we believe that z-mode is better than x-mode in most cases, but not in all. z-mode outperforms x-mode every time a buyer needs to perform multiple transactions with a seller, in this case you get instant transactions and the lowest blockchain fees, even in the case of a single transaction z-mode performs just as good as x-mode (they have the same speed), but the overhead of using a smart contract slightly increases the blockchain fees. So, it's smart to use x-mode for single-use non-repeated transactions, for all the rest use z-mode.
 

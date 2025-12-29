@@ -43,7 +43,7 @@ In z-mode, the actors operate this way:
 
   This phase is the same as in x-mode.
 
-- Authorization phase: The buyer is authorizing the seller to be payed up to a certain "authorized amount" in the future, as they execute tasks for them, up to a deadline, after the deadline the remaining amount is returned to the buyer. The buyer client prepares a payload containing the following:
+- Authorization phase: The buyer is authorizing the seller to be paid up to a certain "authorized amount" in the future, as they execute tasks for them, up to a deadline, after the deadline the remaining amount is returned to the buyer. The buyer client prepares a payload containing the following:
   - network: the blockchain used for the payment
   - (Optional) contract: the address of the smart contract, usually there's a default for this. Some facilitators may have a whitelist/blacklist of smart contracts.
   - recipient: the blockchain address of the seller
