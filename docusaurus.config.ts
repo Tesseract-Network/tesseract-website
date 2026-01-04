@@ -43,7 +43,8 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/Tesseract-Labz/tesseract-website/",
+          editUrl:
+            "https://github.com/Tesseract-Labz/tesseract-website/edit/main",
         },
         blog: {
           showReadingTime: true,
@@ -58,6 +59,8 @@ const config: Config = {
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         theme: {
           customCss: "./src/css/custom.css",
