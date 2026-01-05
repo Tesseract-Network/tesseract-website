@@ -78,9 +78,9 @@ The following graph shows on the horizontal axis the "batch size", i.e. the numb
 
 x402, and z402 x-mode, can process a single transaction per time, therefore their cost per transaction is the same.
 Instead, z402 can batch transaction and we can notice that the cost per transaction decreases with the increasing number of transactions, this is true for all 3 the functions.
-In particular, the `settleBatchSingleTokenSingleSeller` almost reaches the same cost of x402, while `settleBatchSingleTokenSingleSellerSingleEmit` can costs less than half the price of x402.
+In particular, all the 3 functions perform better than x402 even with few transactions, the `settleBatchSingleTokenSingleSeller` almost reaches the same cost of a native blockchain transaction, while `settleBatchSingleTokenSingleSellerSingleEmit` can costs less than half the price of native blockchain transaction.
 
-We will now consider another graph, that on the horizontal axis has the batch size and on the vertical axis has the ratio of the gas cost of the payment method and the gas cost of x402.
+We will now consider another graph, that on the horizontal axis has the batch size and on the vertical axis has the ratio of the gas cost of the payment method and the gas cost of a native transaction.
 
 ![z402 gas cost ratio compared to x402 chart](/topics/z402/stats/z402_gas_cost_ratio_compared_to_x402_graph.png)
 
