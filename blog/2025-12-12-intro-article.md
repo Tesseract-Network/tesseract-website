@@ -49,9 +49,9 @@ Google's [A2A protocol](https://a2a-protocol.org/) seems the emerging protocol f
 
 ## z402
 
-[z402](/docs/z402/introduction) is an **extension** of x402 that is as fast as the internet, transactions are instant with no delay and no extra HTTP requests and, for now, it is twice more scalable than x402.
+[z402](/docs/z402/introduction) is an **extension** of x402 that is as fast as the internet, transactions are instant with no delay and no extra HTTP requests and, for now, it is five times as scalable as x402.
 For this reason z402 satisfies also the 5th point of our list of [requirements for an internet native payment protocol](#requirements-for-an-internet-native-payment-protocol), we didn't hit the 6th point of the list yet, but it's in on our roadmap!
-Being more scalable than x402, means also being cheaper, a z402 transaction can cost less than half of a x402 transaction.
+Being more scalable than x402, means also being cheaper, a z402 transaction can cost less than one fifth of a x402 transaction.
 We are continuously working on improving the scalability of z402, you can read what we are doing in our [z402 costs and scalability post](/blog/z402-cost-and-scalability).
 
 Broadly speaking, z402 uses a smart contract as escrow for the payments and releases the funds only if a valid cryptographic proof of payment is given, the verification of the payment proofs is done completely off-chain, allowing to bypass the delay of the underlining blockchain and to perform instant transactions.
@@ -117,17 +117,17 @@ Let's compare z402 with other payment methods, including x402, Stipe and PayPal.
 
 #### Pricing and speed[^info-disclaimer]
 
-| Payment Method                                         | Typical Fees    | Valid payment | Settlement                                                                              | Scalability                   | Chargeback Risk    |
-| ------------------------------------------------------ | --------------- | ------------- | --------------------------------------------------------------------------------------- | ----------------------------- | ------------------ |
-| Credit Card                                            | $0.30 + 2.9%    | \~1s          | Days (batch)                                                                            | 65k TPS                       | Yes, up to 120d    |
-| PayPal                                                 | ~3% + fixed fee | \~1s          | Days                                                                                    | Unknown                       | Yes                |
-| Stripe                                                 | 2.9% + 0.30\$   | \~1s          | 1-3 days                                                                                | >13k TPS                      | Yes                |
-| Stripe (Pay with Crypto)                               | \>1.5%          | \~1s          | Depends on blockchain                                                                   | Depends on blockchain         | No, not reversible |
-| Ethereum L1                                            | 1–5\$ + gas     | 12s           | 12s block time, \~13 min finality                                                       | 15–20 TPS                     | No, not reversible |
-| x402 (Base)                                            | \<0.001\$       | 200 ms        | 200 ms preconfirmation, 2s block time, \~20 min finality                                | Hundreds to thousands TPS     | No, not reversible |
-| z402 (Ethereum) (100 mean[^z402-transaction-batching]) | \<0.001\$       | 0 ms          | you choose[^z402-settlement] + 12s block time, \~13 min finality                        | 2 times Ethereum = 30-40 TPS  | No, not reversible |
-| z402 (Base) (100 mean[^z402-transaction-batching])     | \<0.0001\$      | 0 ms          | you choose[^z402-settlement] + 200 ms preconfirmation, 2s block time, \~20 min finality | 2 times TPS of x402 on Base   | No, not reversible |
-| z402 (Sonic) (100 mean[^z402-transaction-batching])    | \<0.0001\$      | 0 ms          | you choose[^z402-settlement] + 900 ms block time, \~20s finality                        | 2 times Solana = 200k TPS TPS | No, not reversible |
+| Payment Method                                         | Typical Fees    | Valid payment | Settlement                                                                              | Scalability                  | Chargeback Risk    |
+| ------------------------------------------------------ | --------------- | ------------- | --------------------------------------------------------------------------------------- | ---------------------------- | ------------------ |
+| Credit Card                                            | $0.30 + 2.9%    | \~1s          | Days (batch)                                                                            | 65k TPS                      | Yes, up to 120d    |
+| PayPal                                                 | ~3% + fixed fee | \~1s          | Days                                                                                    | Unknown                      | Yes                |
+| Stripe                                                 | 2.9% + 0.30\$   | \~1s          | 1-3 days                                                                                | >13k TPS                     | Yes                |
+| Stripe (Pay with Crypto)                               | \>1.5%          | \~1s          | Depends on blockchain                                                                   | Depends on blockchain        | No, not reversible |
+| Ethereum L1                                            | 1–5\$ + gas     | 12s           | 12s block time, \~13 min finality                                                       | 15–20 TPS                    | No, not reversible |
+| x402 (Base)                                            | \<0.001\$       | 200 ms        | 200 ms preconfirmation, 2s block time, \~20 min finality                                | Hundreds to thousands TPS    | No, not reversible |
+| z402 (Ethereum) (100 mean[^z402-transaction-batching]) | \<0.001\$       | 0 ms          | you choose[^z402-settlement] + 12s block time, \~13 min finality                        | 2 times Ethereum = 30-40 TPS | No, not reversible |
+| z402 (Base) (100 mean[^z402-transaction-batching])     | \<0.0001\$      | 0 ms          | you choose[^z402-settlement] + 200 ms preconfirmation, 2s block time, \~20 min finality | 5 times TPS of x402 on Base  | No, not reversible |
+| z402 (Sonic) (100 mean[^z402-transaction-batching])    | \<0.0001\$      | 0 ms          | you choose[^z402-settlement] + 900 ms block time, \~20s finality                        | 2 times Sonic = 800k TPS     | No, not reversible |
 
 <!-- TODO: uncomment this line when you add Solana -->
 <!-- | z402 (Solana) (1k mean[^z402-transaction-batching])   | \<0.0001\$      | 0 ms          | you choose[^z402-settlement] + 900 ms block time, \~20s finality                        | 2 times Solana = 200k TPS TPS | No, not reversible | -->
