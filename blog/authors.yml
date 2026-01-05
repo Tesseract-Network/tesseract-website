@@ -2,7 +2,7 @@ frollo:
   name: Frollo
   title: Tesseract CTO
   url: https://frollo.org
-  image_url: /media/blog/authors/frollo.jpg
+  image_url: /authors/frollo.jpg
   page: true
   socials:
     github: frollamam

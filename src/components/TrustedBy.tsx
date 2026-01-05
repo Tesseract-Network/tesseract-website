@@ -47,8 +47,8 @@ export default function TrustedBy() {
               aria-label={`${logo.name} logo`}
               className={styles.trustedLogo}
               style={{
-                WebkitMaskImage: `url(/media/${logo.src})`,
-                maskImage: `url(/media/${logo.src})`,
+                WebkitMaskImage: `url(/pages/landing/trusted-by/${logo.src})`,
+                maskImage: `url(/pages/landing/trusted-by/${logo.src})`,
               }}
             />
           </a>

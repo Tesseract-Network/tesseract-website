@@ -17,6 +17,8 @@ const getCardPlacement = (x: number, y: number) => {
   return { v, h };
 };
 
+const BASE_ICON_PATH = "/pages/landing/IoA-network";
+
 const NODES: MeshNode[] = [
   {
     id: "alice-human",
@@ -25,7 +27,7 @@ const NODES: MeshNode[] = [
     type: "human",
     name: "Alice",
     description: "Wants to build the next big thing!",
-    icon: "/media/collaboration-network/alice_human.png",
+    icon: `${BASE_ICON_PATH}/alice_human.png`,
   },
   {
     id: "alice-bot",
@@ -35,7 +37,7 @@ const NODES: MeshNode[] = [
     name: "Alice's Agent",
     description:
       "Knows Alice well and leverages other expert agents to help her do her thing",
-    icon: "/media/collaboration-network/alice_bot.png",
+    icon: `${BASE_ICON_PATH}/alice_bot.png`,
   },
   {
     id: "math-bot",
@@ -45,7 +47,7 @@ const NODES: MeshNode[] = [
     name: "Math Agent",
     description:
       "Proves theorems autonomously, does your integrals and checks for mistakes",
-    icon: "/media/collaboration-network/math_bot.png",
+    icon: `${BASE_ICON_PATH}/math_bot.png`,
   },
   {
     id: "operator-bot",
@@ -55,7 +57,7 @@ const NODES: MeshNode[] = [
     name: "Operator Agent",
     description:
       "Executes real-world manual actions, from house keeping to carpentry",
-    icon: "/media/collaboration-network/operator_bot.png",
+    icon: `${BASE_ICON_PATH}/operator_bot.png`,
   },
   {
     id: "artist-bot",
@@ -64,7 +66,7 @@ const NODES: MeshNode[] = [
     type: "bot",
     name: "Artist Agent",
     description: "Generates creative visual assets: images, audio and videos",
-    icon: "/media/collaboration-network/artist_bot.png",
+    icon: `${BASE_ICON_PATH}/artist_bot.png`,
   },
   {
     id: "programmer-bot",
@@ -73,7 +75,7 @@ const NODES: MeshNode[] = [
     type: "bot",
     name: "Programmer Agent",
     description: "Writes, tests and refactors production code",
-    icon: "/media/collaboration-network/programmer_bot.png",
+    icon: `${BASE_ICON_PATH}/programmer_bot.png`,
   },
   {
     id: "ai-engineer-human",
@@ -82,7 +84,7 @@ const NODES: MeshNode[] = [
     type: "human",
     name: "AI engineer",
     description: "Builds systems by creating and orchestrating AI agents",
-    icon: "/media/collaboration-network/ai_engineer_human.png",
+    icon: `${BASE_ICON_PATH}/ai_engineer_human.png`,
   },
   {
     id: "writer-bot",
@@ -92,7 +94,7 @@ const NODES: MeshNode[] = [
     name: "Writer Agent",
     description:
       "Has read it all. Can help you write blog posts, essays, poems and everything in between",
-    icon: "/media/collaboration-network/writer_bot.png",
+    icon: `${BASE_ICON_PATH}/writer_bot.png`,
   },
   {
     id: "philosopher-human",
@@ -101,7 +103,7 @@ const NODES: MeshNode[] = [
     type: "bot",
     name: "Philosopher",
     description: "Helps us give a meaning to life, or does the opposite",
-    icon: "/media/collaboration-network/philosopher_human.png",
+    icon: `${BASE_ICON_PATH}/philosopher_human.png`,
   },
   {
     id: "researcher-human",
@@ -110,7 +112,7 @@ const NODES: MeshNode[] = [
     type: "human",
     name: "Researcher",
     description: "Pushes forward the boundary of our knowledge",
-    icon: "/media/collaboration-network/researcher_human.png",
+    icon: `${BASE_ICON_PATH}/researcher_human.png`,
   },
   {
     id: "product-manager-bot",
@@ -120,7 +122,7 @@ const NODES: MeshNode[] = [
     name: "Product Manager Agent",
     description:
       "Creates business plans, gives ideas and insights for successful products",
-    icon: "/media/collaboration-network/business_bot.png",
+    icon: `${BASE_ICON_PATH}/business_bot.png`,
   },
 ];
 

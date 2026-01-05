@@ -21,6 +21,6 @@ In both cases we will compare the results with x402.
 
 ## Costs
 
-![immagine](/media/z402/stats/z402_gas_cost_compared_to_x402_chart.png)
+![immagine](/topics/z402/stats/z402_gas_cost_compared_to_x402_chart.png)
 ...
-![immagine](/media/z402/stats/z402_gas_cost_ratio_compared_to_x402_chart.png)
+![immagine](/topics/z402/stats/z402_gas_cost_ratio_compared_to_x402_chart.png)
