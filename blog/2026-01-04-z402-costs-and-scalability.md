@@ -147,7 +147,7 @@ settleBatchSingleTokenSingleSellerSingleEmit — selected batch sizes
 
 We evaluate scalability in terms of transactions per second (TPS), where the transactions are relative to the technology: z402, x402 or blockchain native transactions.
 
-Let $X \in \{\text{z402}, \text{x402}, \text{blockchain native}\}$ be a given technology. We define
+Let $X \in \{\text{z402}, \text{x402}, \text{native}\}$ be a given technology. We define
 
 - $B_n(X)$: the maximum number of transactions that can fit into a block for the technology $X$
 - $B_t$: the time taken to produce and confirm a block (in seconds), this is independent on the technology $X$
@@ -170,8 +170,8 @@ Then we can compare TPS for different technologies:
 
 $$
 \begin{align*}
-&\frac{\text{TPS}(\text{z402})}{\text{TPS}(\text{blockchain native})} = \frac{g(\text{blockchain native})}{g(\text{z402})} = 2.07\\
-&\frac{\text{TPS}(\text{x402})}{\text{TPS}(\text{blockchain native})} = \frac{g(\text{blockchain native})}{g(\text{x402})} = 0.37\\
+&\frac{\text{TPS}(\text{z402})}{\text{TPS}(\text{native})} = \frac{g(\text{native})}{g(\text{z402})} = 2.07\\
+&\frac{\text{TPS}(\text{x402})}{\text{TPS}(\text{native})} = \frac{g(\text{native})}{g(\text{x402})} = 0.37\\
 &\frac{\text{TPS}(\text{z402})}{\text{TPS}(\text{x402})} = \frac{g(\text{x402})}{g(\text{z402})} = 5.57\\
 \end{align*}
 $$
