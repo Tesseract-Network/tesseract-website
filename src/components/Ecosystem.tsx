@@ -1,6 +1,6 @@
 import styles from "@site/src/css/landing.module.css";
 
-export default function TrustedBy() {
+export default function Ecosystem() {
   const logos = [
     { src: "google_logo.png", name: "Google", url: "https://www.google.com" },
     {
@@ -20,15 +20,15 @@ export default function TrustedBy() {
       url: "https://etherscan.io",
     },
     { src: "zama_logo.png", name: "Zama", url: "https://www.zama.org" },
+    { src: "x402_logo.svg", name: "x402", url: "https://www.x402.org" },
   ];
 
   return (
     <section className={styles.trustedSection}>
       <div className={styles.sectionHeader}>
-        <h2 className={styles.sectionTitle}>Trusted by the Best</h2>
+        <h2 className={styles.sectionTitle}>Our Ecosystem</h2>
         <p className={styles.sectionSubtitle}>
-          Leading AI and blockchain companies rely on Tesseract for their
-          payment infrastructure
+          Building the latest tech alongside leading AI and blockchain companies
         </p>
       </div>
 

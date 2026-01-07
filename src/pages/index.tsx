@@ -5,7 +5,7 @@ import WhySection from "@site/src/components/WhySection";
 import HowItWorks from "@site/src/components/HowItWorks";
 import SecuritySection from "@site/src/components/SecuritySection";
 import PricingSection from "@site/src/components/PricingSection";
-import TrustedBy from "@site/src/components/TrustedBy";
+import Ecosystem from "@site/src/components/Ecosystem";
 import OpenSourceCTA from "@site/src/components/OpenSourceCTA";
 
 import React from "react";
@@ -22,7 +22,7 @@ function App() {
         <HowItWorks />
         <SecuritySection />
         <PricingSection />
-        <TrustedBy />
+        <Ecosystem />
         <OpenSourceCTA />
       </div>
     </Layout>
