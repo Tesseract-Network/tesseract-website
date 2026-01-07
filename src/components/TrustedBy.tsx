@@ -25,7 +25,7 @@ export default function TrustedBy() {
   return (
     <section className={styles.trustedSection}>
       <div className={styles.sectionHeader}>
-        <h2 className={styles.sectionTitle}>Trusted By</h2>
+        <h2 className={styles.sectionTitle}>Trusted by the Best</h2>
         <p className={styles.sectionSubtitle}>
           Leading AI and blockchain companies rely on Tesseract for their
           payment infrastructure

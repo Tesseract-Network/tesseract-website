@@ -4,6 +4,7 @@ import IntroSection from "@site/src/components/IntroSection";
 import WhySection from "@site/src/components/WhySection";
 import HowItWorks from "@site/src/components/HowItWorks";
 import SecuritySection from "@site/src/components/SecuritySection";
+import PricingSection from "@site/src/components/PricingSection";
 import TrustedBy from "@site/src/components/TrustedBy";
 import OpenSourceCTA from "@site/src/components/OpenSourceCTA";
 
@@ -20,6 +21,7 @@ function App() {
         <WhySection />
         <HowItWorks />
         <SecuritySection />
+        <PricingSection />
         <TrustedBy />
         <OpenSourceCTA />
       </div>

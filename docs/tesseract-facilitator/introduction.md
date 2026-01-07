@@ -19,7 +19,7 @@ You can discover the why z402 is awesome and its technical details in the [dedic
 
 ## Why the facilitator
 
-The z402 is a payment protocol that connects two users: the buyer and the seller. In order to follow the protocol the users must use a **z402 client**.
+The z402 is a payment protocol that connects two users: the buyer and the seller. In order to use the protocol the users must use a **z402 client**.
 
 A facilitator is not a client but a software that handles much of the blockchain and protocol specific complexity, so that clients are easier and faster to develop.
 

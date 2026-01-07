@@ -26,16 +26,14 @@ const features: Feature[] = [
     title: "Truly instant",
     description:
       "Make and receive payments with 0 milliseconds network delay. Your agents can't go faster than this!",
-    icon: (
-      <Zap size={32} strokeWidth={2.2} aria-hidden="true" />
-    ),
+    icon: <Zap size={32} strokeWidth={2.2} aria-hidden="true" />,
   },
   {
     id: "micropayments-accepted",
     name: "Micropayments accepted",
     title: "Micropayments",
     description:
-      "The underling protocol, z402, is an open standard that doesn't charge any fees. Very low transaction fees (less than 0.001\$ typically) come from the underling blockchain, thanks to z402 you can even batch transactions and save big! Enjoy subcent payments!",
+      "The underling protocol, z402, is an open standard that doesn't charge any fees. Extremely low transaction fees (less than 0.001\$) come from the underling blockchain, thanks to z402 you can even batch transactions and save big! Enjoy subcent payments!",
     icon: <Coins size={32} strokeWidth={2.2} aria-hidden="true" />,
   },
   {

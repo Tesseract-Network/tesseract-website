@@ -106,8 +106,8 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "mailto:info@tesseractlabz.com",
-          label: "Get in Touch",
+          href: "/signup",
+          label: "Get Started",
           position: "right",
         },
       ],
@@ -116,41 +116,41 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Resources",
           items: [
             {
               label: "Docs",
               to: "/docs",
             },
-          ],
-        },
-        // {
-        //   title: "Community",
-        //   items: [
-        //     {
-        //       label: "Stack Overflow",
-        //       href: "https://stackoverflow.com/questions/tagged/docusaurus",
-        //     },
-        //     {
-        //       label: "Discord",
-        //       href: "https://discordapp.com/invite/docusaurus",
-        //     },
-        //     {
-        //       label: "X",
-        //       href: "https://x.com/docusaurus",
-        //     },
-        //   ],
-        // },
-        {
-          title: "More",
-          items: [
             {
               label: "Blog",
               to: "/blog",
             },
+          ],
+        },
+        {
+          title: "Community",
+          items: [
+            {
+              label: "LinkedIn",
+              to: "https://www.linkedin.com/company/tesseract-labz",
+            },
             {
               label: "GitHub",
               href: "https://github.com/Tesseract-Labz/",
+            },
+          ],
+        },
+        {
+          title: "Contacts",
+          items: [
+            {
+              label: "info@tesseractlabz.com",
+              to: "mailto:info@tesseractlabz.com",
+            },
+            {
+              label: "sales@tesseractlabz.com",
+              to: "mailto:sales@tesseractlabz.com",
             },
           ],
         },
