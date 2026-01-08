@@ -133,7 +133,7 @@ const config: Config = {
           items: [
             {
               label: "LinkedIn",
-              to: "https://www.linkedin.com/company/tesseract-labz",
+              href: "https://www.linkedin.com/company/tesseract-labz",
             },
             {
               label: "GitHub",
