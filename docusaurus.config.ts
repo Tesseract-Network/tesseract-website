@@ -85,7 +85,7 @@ const config: Config = {
   ],
   themeConfig: {
     // Replace with your project's social card
-    image: "logo.png",
+    image: "logo.svg",
     colorMode: {
       defaultMode: "dark",
       disableSwitch: true,
@@ -95,7 +95,7 @@ const config: Config = {
       title: "Tesseract",
       logo: {
         alt: "Tesseract Logo",
-        src: "logo.png",
+        src: "logo.svg",
       },
       items: [
         {
