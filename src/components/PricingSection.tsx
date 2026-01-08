@@ -11,8 +11,8 @@ const plans = [
     accent: "outline",
     icon: <Sparkle size={16} strokeWidth={2.4} aria-hidden="true" />,
     features: [
-      "100 single transactions per month",
-      "1000 batched transactions per month",
+      "100 free single transactions per month",
+      "1000 free batched transactions per month",
       "Community support",
       "No credit card required to start",
     ],

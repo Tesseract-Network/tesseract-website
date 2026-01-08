@@ -37,9 +37,11 @@ export default function SecuritySection() {
             </a>
             , one of the most reputable security firms in blockchain.
           </p>
+          {/* 
           <a href="#audit-report" className={styles.auditLink}>
             View Audit Report →
           </a>
+          */}
         </div>
       </div>
     </section>
