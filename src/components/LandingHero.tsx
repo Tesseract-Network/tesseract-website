@@ -49,7 +49,7 @@ export default function LandingHero() {
     <section className={styles.hero} id="hero">
       <video
         className={styles.videoBg}
-        src="/pages/landing/hero/hero_background_video.mp4"
+        src="/pages/landing/hero/hero_background_video-960p.mp4"
         autoPlay
         muted
         loop

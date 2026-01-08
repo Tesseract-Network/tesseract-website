@@ -2,24 +2,28 @@ import styles from "@site/src/css/landing.module.css";
 
 export default function Ecosystem() {
   const logos = [
-    { src: "google_logo.png", name: "Google", url: "https://www.google.com" },
     {
-      src: "microsoft_logo.png",
+      src: "google_logo.svg",
+      name: "Google",
+      url: "https://www.google.com",
+    },
+    {
+      src: "microsoft_logo.svg",
       name: "Microsoft",
       url: "https://www.microsoft.com",
     },
-    { src: "openai_logo.png", name: "OpenAI", url: "https://openai.com" },
+    { src: "openai_logo.svg", name: "OpenAI", url: "https://openai.com" },
     {
-      src: "anthropic_logo.png",
+      src: "anthropic_logo.svg",
       name: "Anthropic",
       url: "https://www.anthropic.com",
     },
     {
-      src: "etherscan_logo.png",
+      src: "etherscan_logo.svg",
       name: "Etherscan",
       url: "https://etherscan.io",
     },
-    { src: "zama_logo.png", name: "Zama", url: "https://www.zama.org" },
+    { src: "zama_logo.svg", name: "Zama", url: "https://www.zama.org" },
     { src: "x402_logo.svg", name: "x402", url: "https://www.x402.org" },
   ];
 
@@ -47,8 +51,8 @@ export default function Ecosystem() {
               aria-label={`${logo.name} logo`}
               className={styles.trustedLogo}
               style={{
-                WebkitMaskImage: `url(/pages/landing/trusted-by/${logo.src})`,
-                maskImage: `url(/pages/landing/trusted-by/${logo.src})`,
+                WebkitMaskImage: `url(/pages/landing/ecosystem/${logo.src})`,
+                maskImage: `url(/pages/landing/ecosystem/${logo.src})`,
               }}
             />
           </a>

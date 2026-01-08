@@ -9,7 +9,7 @@ import rehypeKatex from "rehype-katex";
 const config: Config = {
   title: "Tesseract",
   tagline: "The instant agent-first payment method",
-  favicon: "logo.png",
+  favicon: "logo.svg",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {

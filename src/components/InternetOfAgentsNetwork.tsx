@@ -27,7 +27,7 @@ const NODES: MeshNode[] = [
     type: "human",
     name: "Alice",
     description: "Wants to build the next big thing!",
-    icon: `${BASE_ICON_PATH}/alice_human.png`,
+    icon: `${BASE_ICON_PATH}/alice_human.webp`,
   },
   {
     id: "alice-bot",
@@ -37,7 +37,7 @@ const NODES: MeshNode[] = [
     name: "Alice's Agent",
     description:
       "Knows Alice well and leverages other expert agents to help her do her thing",
-    icon: `${BASE_ICON_PATH}/alice_bot.png`,
+    icon: `${BASE_ICON_PATH}/alice_bot.webp`,
   },
   {
     id: "math-bot",
@@ -47,7 +47,7 @@ const NODES: MeshNode[] = [
     name: "Math Agent",
     description:
       "Proves theorems autonomously, does your integrals and checks for mistakes",
-    icon: `${BASE_ICON_PATH}/math_bot.png`,
+    icon: `${BASE_ICON_PATH}/math_bot.webp`,
   },
   {
     id: "operator-bot",
@@ -57,7 +57,7 @@ const NODES: MeshNode[] = [
     name: "Operator Agent",
     description:
       "Executes real-world manual actions, from house keeping to carpentry",
-    icon: `${BASE_ICON_PATH}/operator_bot.png`,
+    icon: `${BASE_ICON_PATH}/operator_bot.webp`,
   },
   {
     id: "artist-bot",
@@ -66,7 +66,7 @@ const NODES: MeshNode[] = [
     type: "bot",
     name: "Artist Agent",
     description: "Generates creative visual assets: images, audio and videos",
-    icon: `${BASE_ICON_PATH}/artist_bot.png`,
+    icon: `${BASE_ICON_PATH}/artist_bot.webp`,
   },
   {
     id: "programmer-bot",
@@ -75,7 +75,7 @@ const NODES: MeshNode[] = [
     type: "bot",
     name: "Programmer Agent",
     description: "Writes, tests and refactors production code",
-    icon: `${BASE_ICON_PATH}/programmer_bot.png`,
+    icon: `${BASE_ICON_PATH}/programmer_bot.webp`,
   },
   {
     id: "ai-engineer-human",
@@ -84,7 +84,7 @@ const NODES: MeshNode[] = [
     type: "human",
     name: "AI engineer",
     description: "Builds systems by creating and orchestrating AI agents",
-    icon: `${BASE_ICON_PATH}/ai_engineer_human.png`,
+    icon: `${BASE_ICON_PATH}/ai_engineer_human.webp`,
   },
   {
     id: "writer-bot",
@@ -94,7 +94,7 @@ const NODES: MeshNode[] = [
     name: "Writer Agent",
     description:
       "Has read it all. Can help you write blog posts, essays, poems and everything in between",
-    icon: `${BASE_ICON_PATH}/writer_bot.png`,
+    icon: `${BASE_ICON_PATH}/writer_bot.webp`,
   },
   {
     id: "philosopher-human",
@@ -103,7 +103,7 @@ const NODES: MeshNode[] = [
     type: "bot",
     name: "Philosopher",
     description: "Helps us give a meaning to life, or does the opposite",
-    icon: `${BASE_ICON_PATH}/philosopher_human.png`,
+    icon: `${BASE_ICON_PATH}/philosopher_human.webp`,
   },
   {
     id: "researcher-human",
@@ -112,7 +112,7 @@ const NODES: MeshNode[] = [
     type: "human",
     name: "Researcher",
     description: "Pushes forward the boundary of our knowledge",
-    icon: `${BASE_ICON_PATH}/researcher_human.png`,
+    icon: `${BASE_ICON_PATH}/researcher_human.webp`,
   },
   {
     id: "product-manager-bot",
@@ -122,7 +122,7 @@ const NODES: MeshNode[] = [
     name: "Product Manager Agent",
     description:
       "Creates business plans, gives ideas and insights for successful products",
-    icon: `${BASE_ICON_PATH}/business_bot.png`,
+    icon: `${BASE_ICON_PATH}/business_bot.webp`,
   },
 ];
 
@@ -201,6 +201,7 @@ export default function InternetOfAgentsNetworNetwork() {
               src={node.icon}
               alt={node.name}
               className={styles.meshNodeIcon}
+              loading="lazy"
             />
           </div>
         ))}
