@@ -50,8 +50,8 @@ export default function SignupPage() {
               Request access to Tesseract's facilitator
             </h1>
             <p className={styles.sectionSubtitle}>
-              Tell us about your agents and we will unlock the right runway for
-              you.
+              Unlock Tesseract payments solutions <b>for free</b> during beta,
+              including monetization of AI agents and API endpoints.
             </p>
           </div>
 
