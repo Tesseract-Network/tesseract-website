@@ -59,10 +59,10 @@ export default function SignupPage() {
             <div className={styles.signupCard}>
               <h2 className={styles.signupLead}>Join the beta</h2>
               <p className={styles.signupCopy}>
-                During beta, you can enjoy transactions without paying fees and
-                with the outstanding Tesseract support. We prioritize teams
-                building cool projects, please share a few details so we can set
-                up evething for you.
+                During beta, you can enjoy transactions without paying fees with
+                the outstanding Tesseract support. We will grant access
+                gradually depending on demand, please share a few details so we
+                can prioritze your request and set up evething for you.
               </p>
 
               <form className={styles.signupForm} onSubmit={handleSubmit}>
@@ -127,16 +127,35 @@ export default function SignupPage() {
                 <div className={styles.formRow}>
                   <div className={styles.inputGroup}>
                     <label className={styles.inputLabel} htmlFor="useCase">
-                      What are you building?
+                      What is your use case?
                     </label>
-                    <input
+                    <textarea
                       id="useCase"
                       name="useCase"
-                      type="text"
+                      rows={3}
                       className={styles.inputControl}
-                      placeholder="Marketplace of research agents"
-                    />
+                      placeholder="I want to sell access to my AI model, I build paid REST API for clients, I'm building a paywall"
+                    ></textarea>
                   </div>
+                </div>
+
+                <div className={styles.formRow}>
+                  <div className={styles.inputGroup}>
+                    <label className={styles.inputLabel} htmlFor="priorTools">
+                      Did you use other tools before? What are the current
+                      problems in the process?
+                    </label>
+                    <textarea
+                      id="priorTools"
+                      name="priorTools"
+                      rows={3}
+                      className={styles.inputControl}
+                      placeholder="Share what you tried and where the process breaks."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div className={styles.formRow}>
                   <div className={styles.inputGroup}>
                     <label className={styles.inputLabel} htmlFor="heardFrom">
                       How did you hear about us?
