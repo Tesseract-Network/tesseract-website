@@ -151,7 +151,7 @@ export default function SignupPage() {
 
                 <div className={styles.inputGroup}>
                   <label className={styles.inputLabel} htmlFor="notes">
-                    Anything else we should know?
+                    Anything else we should know? Questions?
                   </label>
                   <textarea
                     id="notes"
