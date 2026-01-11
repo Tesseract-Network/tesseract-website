@@ -106,7 +106,7 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "/signup",
+          href: "/beta",
           label: "Get Started",
           position: "right",
         },

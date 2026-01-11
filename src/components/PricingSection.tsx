@@ -1,5 +1,6 @@
 import { Check, Sparkle, Gauge, ShieldCheck } from "lucide-react";
 import styles from "@site/src/css/landing.module.css";
+import Link from "@docusaurus/Link";
 
 const plans = [
   {
@@ -57,8 +58,7 @@ const plans = [
       "White-glove onboarding for your teams",
       "Institutional-grade SLAs",
       "Priority support from Tesseract",
-      "Unlimited exact mode transactions per month",
-      "Unlimited escrow mode transactions per month",
+      "No limits on transactions each month",
       "Control panel with cost tracking, performance and budgeting",
     ],
   },
@@ -103,12 +103,12 @@ export default function PricingSection() {
             </ul>
 
             <div className={styles.planActions}>
-              <a
+              <Link
+                to="/beta"
                 className={`${styles.btn} ${styles.btnPrimary} ${styles.planButton}`}
-                href="/beta"
               >
                 Request Beta access
-              </a>
+              </Link>
             </div>
           </div>
         ))}

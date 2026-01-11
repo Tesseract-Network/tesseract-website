@@ -59,8 +59,10 @@ export default function SignupPage() {
             <div className={styles.signupCard}>
               <h2 className={styles.signupLead}>Join the beta</h2>
               <p className={styles.signupCopy}>
-                We prioritize teams building cool projects. Share a few details
-                so we can enable the right limits and guidance.
+                During beta, you can enjoy transactions without paying fees and
+                with the outstanding Tesseract support. We prioritize teams
+                building cool projects, please share a few details so we can set
+                up evething for you.
               </p>
 
               <form className={styles.signupForm} onSubmit={handleSubmit}>
@@ -151,14 +153,14 @@ export default function SignupPage() {
 
                 <div className={styles.inputGroup}>
                   <label className={styles.inputLabel} htmlFor="notes">
-                    Anything else we should know? Questions?
+                    Anything else you want share with us? Questions?
                   </label>
                   <textarea
                     id="notes"
                     name="notes"
                     rows={4}
                     className={styles.inputControl}
-                    placeholder="Share context, constraints, or links to demos."
+                    placeholder="Share context, constraints, links to demos or any question you might have."
                   ></textarea>
                   <p className={styles.helper}>
                     The more context you share, the faster we can grant you

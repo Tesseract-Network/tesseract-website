@@ -42,7 +42,7 @@ A z402 facilitator has two operative modes:
 - **x-mode**: it uses the exact specification of x402, ensuring compatibility.
 - **z-mode**: it adds the ability to execute zero seconds delay transactions.
 
-Check the [z402 protocol description](/docs/z402/introduction.md#The-z402-protocol) to know more about these modes.
+Check the [z402 protocol description](/docs/z402/introduction.md#the-z402-protocol) out these modes.
 
 ## Supported networks
 

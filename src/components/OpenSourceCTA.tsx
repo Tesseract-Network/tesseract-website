@@ -1,4 +1,5 @@
 import styles from "@site/src/css/landing.module.css";
+import Link from "@docusaurus/Link";
 
 export default function OpenSourceCTA() {
   return (
@@ -32,9 +33,9 @@ export default function OpenSourceCTA() {
             </svg>
             Check Out Our Repo
           </a>
-          <a href="/docs" className={`${styles.btn} ${styles.btnOutline}`}>
+          <Link to="/docs" className={`${styles.btn} ${styles.btnOutline}`}>
             Read the Docs
-          </a>
+          </Link>
         </div>
       </div>
     </section>
