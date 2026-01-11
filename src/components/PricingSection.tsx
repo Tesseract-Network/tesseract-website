@@ -3,35 +3,49 @@ import styles from "@site/src/css/landing.module.css";
 
 const plans = [
   {
-    name: "Starter",
+    name: "Early bird",
     paymentType: "Free",
-    priceCopy: "Free forever",
-    description:
-      "Monetize your first agents and API endpoints without friction",
+    priceCopy: "Free during beta: limited spots",
+    description: "Monetize your agents and API endpoints without friction",
     accent: "outline",
     icon: <Sparkle size={16} strokeWidth={2.4} aria-hidden="true" />,
     features: [
-      "100 free single transactions per month",
-      "1000 free batched transactions per month",
+      "No fees for any transaction",
       "Community support",
-      "No credit card required to start",
+      "Tesseract support",
+      "No credit card required",
     ],
   },
-  {
-    name: "Professional",
-    paymentType: "Pay as you go",
-    priceCopy: "Pay per request",
-    description: "Scale live agents and only pay for what moves.",
-    accent: "highlight",
-    icon: <Gauge size={16} strokeWidth={2.4} aria-hidden="true" />,
-    features: [
-      "Unlimited single transactions per month",
-      "Unlimited batched transactions per month",
-      "Cost tracking and budgeting",
-      "Email support from Tesseract",
-      "Community support",
-    ],
-  },
+  // {
+  //   name: "Starter",
+  //   paymentType: "Free",
+  //   priceCopy: "Free forever",
+  //   description:
+  //     "Monetize your first agents and API endpoints without friction",
+  //   accent: "outline",
+  //   icon: <Sparkle size={16} strokeWidth={2.4} aria-hidden="true" />,
+  //   features: [
+  //     "100 free single transactions per month",
+  //     "1000 free batched transactions per month",
+  //     "Community support",
+  //     "No credit card required",
+  //   ],
+  // },
+  // {
+  //   name: "Professional",
+  //   paymentType: "Pay as you go",
+  //   priceCopy: "Pay per request",
+  //   description: "Scale live agents and only pay for what moves.",
+  //   accent: "highlight",
+  //   icon: <Gauge size={16} strokeWidth={2.4} aria-hidden="true" />,
+  //   features: [
+  //     "Unlimited single transactions per month",
+  //     "Unlimited batched transactions per month",
+  //     "Cost tracking and budgeting",
+  //     "Email support from Tesseract",
+  //     "Community support",
+  //   ],
+  // },
   {
     name: "Enterprise",
     paymentType: "Custom pricing",
@@ -45,7 +59,7 @@ const plans = [
       "Priority support from Tesseract",
       "Unlimited exact mode transactions per month",
       "Unlimited escrow mode transactions per month",
-      "Cost tracking and budgeting",
+      "Control panel with cost tracking, performance and budgeting",
     ],
   },
 ];
@@ -91,7 +105,7 @@ export default function PricingSection() {
             <div className={styles.planActions}>
               <a
                 className={`${styles.btn} ${styles.btnPrimary} ${styles.planButton}`}
-                href="/signup"
+                href="/beta"
               >
                 Request Beta access
               </a>

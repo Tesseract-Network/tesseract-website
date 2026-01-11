@@ -225,7 +225,7 @@ export default function SignupPage() {
               <div className={styles.signupActions}>
                 <div className={styles.pillList}>
                   <span className={styles.pill}>Instant transactions</span>
-                  <span className={styles.pill}>Micropayements</span>
+                  <span className={styles.pill}>Micropayments</span>
                   <span className={styles.pill}>Agent-native</span>
                 </div>
               </div>
