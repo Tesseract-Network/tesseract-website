@@ -59,8 +59,8 @@ export default function SignupPage() {
             <div className={styles.signupCard}>
               <h2 className={styles.signupLead}>Join the beta</h2>
               <p className={styles.signupCopy}>
-                During beta, you can enjoy transactions without paying fees with
-                the outstanding Tesseract support. We will grant access
+                During beta, you can enjoy transactions and the outstanding
+                Tesseract support without paying any fee. We will grant access
                 gradually depending on demand, please share a few details so we
                 can prioritze your request and set up evething for you.
               </p>
